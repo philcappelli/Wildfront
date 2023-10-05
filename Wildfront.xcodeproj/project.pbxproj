@@ -1,0 +1,593 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D4A883C92ACF49DA00154A97 /* WildfrontApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4A883C82ACF49DA00154A97 /* WildfrontApp.swift */; };
+		D4A883CB2ACF49DA00154A97 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4A883CA2ACF49DA00154A97 /* ContentView.swift */; };
+		D4A883CD2ACF49DC00154A97 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D4A883CC2ACF49DC00154A97 /* Assets.xcassets */; };
+		D4A883D02ACF49DC00154A97 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D4A883CF2ACF49DC00154A97 /* Preview Assets.xcassets */; };
+		D4A883DA2ACF49DC00154A97 /* WildfrontTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4A883D92ACF49DC00154A97 /* WildfrontTests.swift */; };
+		D4A883E42ACF49DC00154A97 /* WildfrontUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4A883E32ACF49DC00154A97 /* WildfrontUITests.swift */; };
+		D4A883E62ACF49DC00154A97 /* WildfrontUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4A883E52ACF49DC00154A97 /* WildfrontUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D4A883D62ACF49DC00154A97 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D4A883BD2ACF49DA00154A97 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D4A883C42ACF49DA00154A97;
+			remoteInfo = Wildfront;
+		};
+		D4A883E02ACF49DC00154A97 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D4A883BD2ACF49DA00154A97 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D4A883C42ACF49DA00154A97;
+			remoteInfo = Wildfront;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		D4A883C52ACF49DA00154A97 /* Wildfront.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Wildfront.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D4A883C82ACF49DA00154A97 /* WildfrontApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WildfrontApp.swift; sourceTree = "<group>"; };
+		D4A883CA2ACF49DA00154A97 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		D4A883CC2ACF49DC00154A97 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D4A883CF2ACF49DC00154A97 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		D4A883D52ACF49DC00154A97 /* WildfrontTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WildfrontTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D4A883D92ACF49DC00154A97 /* WildfrontTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WildfrontTests.swift; sourceTree = "<group>"; };
+		D4A883DF2ACF49DC00154A97 /* WildfrontUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WildfrontUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D4A883E32ACF49DC00154A97 /* WildfrontUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WildfrontUITests.swift; sourceTree = "<group>"; };
+		D4A883E52ACF49DC00154A97 /* WildfrontUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WildfrontUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D4A883C22ACF49DA00154A97 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D4A883D22ACF49DC00154A97 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D4A883DC2ACF49DC00154A97 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D4A883BC2ACF49DA00154A97 = {
+			isa = PBXGroup;
+			children = (
+				D4A883C72ACF49DA00154A97 /* Wildfront */,
+				D4A883D82ACF49DC00154A97 /* WildfrontTests */,
+				D4A883E22ACF49DC00154A97 /* WildfrontUITests */,
+				D4A883C62ACF49DA00154A97 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D4A883C62ACF49DA00154A97 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D4A883C52ACF49DA00154A97 /* Wildfront.app */,
+				D4A883D52ACF49DC00154A97 /* WildfrontTests.xctest */,
+				D4A883DF2ACF49DC00154A97 /* WildfrontUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D4A883C72ACF49DA00154A97 /* Wildfront */ = {
+			isa = PBXGroup;
+			children = (
+				D4A883C82ACF49DA00154A97 /* WildfrontApp.swift */,
+				D4A883CA2ACF49DA00154A97 /* ContentView.swift */,
+				D4A883CC2ACF49DC00154A97 /* Assets.xcassets */,
+				D4A883CE2ACF49DC00154A97 /* Preview Content */,
+			);
+			path = Wildfront;
+			sourceTree = "<group>";
+		};
+		D4A883CE2ACF49DC00154A97 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				D4A883CF2ACF49DC00154A97 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		D4A883D82ACF49DC00154A97 /* WildfrontTests */ = {
+			isa = PBXGroup;
+			children = (
+				D4A883D92ACF49DC00154A97 /* WildfrontTests.swift */,
+			);
+			path = WildfrontTests;
+			sourceTree = "<group>";
+		};
+		D4A883E22ACF49DC00154A97 /* WildfrontUITests */ = {
+			isa = PBXGroup;
+			children = (
+				D4A883E32ACF49DC00154A97 /* WildfrontUITests.swift */,
+				D4A883E52ACF49DC00154A97 /* WildfrontUITestsLaunchTests.swift */,
+			);
+			path = WildfrontUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D4A883C42ACF49DA00154A97 /* Wildfront */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D4A883E92ACF49DC00154A97 /* Build configuration list for PBXNativeTarget "Wildfront" */;
+			buildPhases = (
+				D4A883C12ACF49DA00154A97 /* Sources */,
+				D4A883C22ACF49DA00154A97 /* Frameworks */,
+				D4A883C32ACF49DA00154A97 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Wildfront;
+			productName = Wildfront;
+			productReference = D4A883C52ACF49DA00154A97 /* Wildfront.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D4A883D42ACF49DC00154A97 /* WildfrontTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D4A883EC2ACF49DC00154A97 /* Build configuration list for PBXNativeTarget "WildfrontTests" */;
+			buildPhases = (
+				D4A883D12ACF49DC00154A97 /* Sources */,
+				D4A883D22ACF49DC00154A97 /* Frameworks */,
+				D4A883D32ACF49DC00154A97 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D4A883D72ACF49DC00154A97 /* PBXTargetDependency */,
+			);
+			name = WildfrontTests;
+			productName = WildfrontTests;
+			productReference = D4A883D52ACF49DC00154A97 /* WildfrontTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		D4A883DE2ACF49DC00154A97 /* WildfrontUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D4A883EF2ACF49DC00154A97 /* Build configuration list for PBXNativeTarget "WildfrontUITests" */;
+			buildPhases = (
+				D4A883DB2ACF49DC00154A97 /* Sources */,
+				D4A883DC2ACF49DC00154A97 /* Frameworks */,
+				D4A883DD2ACF49DC00154A97 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D4A883E12ACF49DC00154A97 /* PBXTargetDependency */,
+			);
+			name = WildfrontUITests;
+			productName = WildfrontUITests;
+			productReference = D4A883DF2ACF49DC00154A97 /* WildfrontUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D4A883BD2ACF49DA00154A97 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					D4A883C42ACF49DA00154A97 = {
+						CreatedOnToolsVersion = 15.0;
+					};
+					D4A883D42ACF49DC00154A97 = {
+						CreatedOnToolsVersion = 15.0;
+						TestTargetID = D4A883C42ACF49DA00154A97;
+					};
+					D4A883DE2ACF49DC00154A97 = {
+						CreatedOnToolsVersion = 15.0;
+						TestTargetID = D4A883C42ACF49DA00154A97;
+					};
+				};
+			};
+			buildConfigurationList = D4A883C02ACF49DA00154A97 /* Build configuration list for PBXProject "Wildfront" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D4A883BC2ACF49DA00154A97;
+			productRefGroup = D4A883C62ACF49DA00154A97 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D4A883C42ACF49DA00154A97 /* Wildfront */,
+				D4A883D42ACF49DC00154A97 /* WildfrontTests */,
+				D4A883DE2ACF49DC00154A97 /* WildfrontUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D4A883C32ACF49DA00154A97 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D4A883D02ACF49DC00154A97 /* Preview Assets.xcassets in Resources */,
+				D4A883CD2ACF49DC00154A97 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D4A883D32ACF49DC00154A97 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D4A883DD2ACF49DC00154A97 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D4A883C12ACF49DA00154A97 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D4A883CB2ACF49DA00154A97 /* ContentView.swift in Sources */,
+				D4A883C92ACF49DA00154A97 /* WildfrontApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D4A883D12ACF49DC00154A97 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D4A883DA2ACF49DC00154A97 /* WildfrontTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D4A883DB2ACF49DC00154A97 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D4A883E62ACF49DC00154A97 /* WildfrontUITestsLaunchTests.swift in Sources */,
+				D4A883E42ACF49DC00154A97 /* WildfrontUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D4A883D72ACF49DC00154A97 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D4A883C42ACF49DA00154A97 /* Wildfront */;
+			targetProxy = D4A883D62ACF49DC00154A97 /* PBXContainerItemProxy */;
+		};
+		D4A883E12ACF49DC00154A97 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D4A883C42ACF49DA00154A97 /* Wildfront */;
+			targetProxy = D4A883E02ACF49DC00154A97 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		D4A883E72ACF49DC00154A97 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		D4A883E82ACF49DC00154A97 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D4A883EA2ACF49DC00154A97 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Wildfront/Preview Content\"";
+				DEVELOPMENT_TEAM = 7G82ECD844;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = io.onyxstudios.Wildfront;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D4A883EB2ACF49DC00154A97 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Wildfront/Preview Content\"";
+				DEVELOPMENT_TEAM = 7G82ECD844;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = io.onyxstudios.Wildfront;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		D4A883ED2ACF49DC00154A97 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 7G82ECD844;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = io.onyxstudios.WildfrontTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Wildfront.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Wildfront";
+			};
+			name = Debug;
+		};
+		D4A883EE2ACF49DC00154A97 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 7G82ECD844;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = io.onyxstudios.WildfrontTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Wildfront.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Wildfront";
+			};
+			name = Release;
+		};
+		D4A883F02ACF49DC00154A97 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 7G82ECD844;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = io.onyxstudios.WildfrontUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Wildfront;
+			};
+			name = Debug;
+		};
+		D4A883F12ACF49DC00154A97 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 7G82ECD844;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = io.onyxstudios.WildfrontUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Wildfront;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D4A883C02ACF49DA00154A97 /* Build configuration list for PBXProject "Wildfront" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D4A883E72ACF49DC00154A97 /* Debug */,
+				D4A883E82ACF49DC00154A97 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D4A883E92ACF49DC00154A97 /* Build configuration list for PBXNativeTarget "Wildfront" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D4A883EA2ACF49DC00154A97 /* Debug */,
+				D4A883EB2ACF49DC00154A97 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D4A883EC2ACF49DC00154A97 /* Build configuration list for PBXNativeTarget "WildfrontTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D4A883ED2ACF49DC00154A97 /* Debug */,
+				D4A883EE2ACF49DC00154A97 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D4A883EF2ACF49DC00154A97 /* Build configuration list for PBXNativeTarget "WildfrontUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D4A883F02ACF49DC00154A97 /* Debug */,
+				D4A883F12ACF49DC00154A97 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D4A883BD2ACF49DA00154A97 /* Project object */;
+}
