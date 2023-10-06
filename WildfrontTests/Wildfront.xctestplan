@@ -1,0 +1,31 @@
+{
+  "configurations" : [
+    {
+      "id" : "841DAB70-F745-45FA-BA5D-7B05F875A4C9",
+      "name" : "Configuration 1",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+    "testTimeoutsEnabled" : true
+  },
+  "testTargets" : [
+    {
+      "target" : {
+        "containerPath" : "container:Wildfront.xcodeproj",
+        "identifier" : "D4A883D42ACF49DC00154A97",
+        "name" : "WildfrontTests"
+      }
+    },
+    {
+      "target" : {
+        "containerPath" : "container:Wildfront.xcodeproj",
+        "identifier" : "D4A883DE2ACF49DC00154A97",
+        "name" : "WildfrontUITests"
+      }
+    }
+  ],
+  "version" : 1
+}

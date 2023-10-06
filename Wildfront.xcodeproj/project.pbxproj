@@ -14,6 +14,20 @@
 		D4A883DA2ACF49DC00154A97 /* WildfrontTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4A883D92ACF49DC00154A97 /* WildfrontTests.swift */; };
 		D4A883E42ACF49DC00154A97 /* WildfrontUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4A883E32ACF49DC00154A97 /* WildfrontUITests.swift */; };
 		D4A883E62ACF49DC00154A97 /* WildfrontUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4A883E52ACF49DC00154A97 /* WildfrontUITestsLaunchTests.swift */; };
+		D4A883F62ACF614200154A97 /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4A883F52ACF614200154A97 /* APIService.swift */; };
+		D4A883FB2ACF650E00154A97 /* Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4A883FA2ACF650E00154A97 /* Environment.swift */; };
+		D4A884002ACF6D1900154A97 /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4A883FF2ACF6D1900154A97 /* NetworkError.swift */; };
+		D4A884042ACF92B500154A97 /* APIRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4A884032ACF92B500154A97 /* APIRequest.swift */; };
+		D4A884062ACF943A00154A97 /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4A884052ACF943A00154A97 /* Network.swift */; };
+		D4A884092ACF9C7700154A97 /* DefaultAPIServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4A884082ACF9C7700154A97 /* DefaultAPIServiceTests.swift */; };
+		D4AB41242ACFADD7004DB20E /* MockAPIRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4AB41232ACFADD7004DB20E /* MockAPIRequest.swift */; };
+		D4AB41272AD05E1D004DB20E /* HTTPURLResponseExtensionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4AB41262AD05E1D004DB20E /* HTTPURLResponseExtensionTests.swift */; };
+		D4AB412A2AD06192004DB20E /* HTTPURLResponse+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4AB41292AD06192004DB20E /* HTTPURLResponse+Extensions.swift */; };
+		D4AB41312AD07290004DB20E /* NetworkSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4AB41302AD07290004DB20E /* NetworkSession.swift */; };
+		D4AB41332AD0773A004DB20E /* MockNetworkSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4AB41322AD0773A004DB20E /* MockNetworkSession.swift */; };
+		D4AB41362AD07E27004DB20E /* MockResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4AB41352AD07E27004DB20E /* MockResponseModel.swift */; };
+		D4AB41392AD07E8C004DB20E /* APIResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4AB41382AD07E8C004DB20E /* APIResponse.swift */; };
+		D4AB413B2AD08D51004DB20E /* MockNetworkSessionBehavior.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4AB413A2AD08D51004DB20E /* MockNetworkSessionBehavior.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +58,21 @@
 		D4A883DF2ACF49DC00154A97 /* WildfrontUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WildfrontUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D4A883E32ACF49DC00154A97 /* WildfrontUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WildfrontUITests.swift; sourceTree = "<group>"; };
 		D4A883E52ACF49DC00154A97 /* WildfrontUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WildfrontUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		D4A883F52ACF614200154A97 /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
+		D4A883FA2ACF650E00154A97 /* Environment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Environment.swift; sourceTree = "<group>"; };
+		D4A883FF2ACF6D1900154A97 /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
+		D4A884012ACF8F2E00154A97 /* Wildfront.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = Wildfront.xctestplan; sourceTree = "<group>"; };
+		D4A884032ACF92B500154A97 /* APIRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIRequest.swift; sourceTree = "<group>"; };
+		D4A884052ACF943A00154A97 /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
+		D4A884082ACF9C7700154A97 /* DefaultAPIServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultAPIServiceTests.swift; sourceTree = "<group>"; };
+		D4AB41232ACFADD7004DB20E /* MockAPIRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockAPIRequest.swift; sourceTree = "<group>"; };
+		D4AB41262AD05E1D004DB20E /* HTTPURLResponseExtensionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPURLResponseExtensionTests.swift; sourceTree = "<group>"; };
+		D4AB41292AD06192004DB20E /* HTTPURLResponse+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HTTPURLResponse+Extensions.swift"; sourceTree = "<group>"; };
+		D4AB41302AD07290004DB20E /* NetworkSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkSession.swift; sourceTree = "<group>"; };
+		D4AB41322AD0773A004DB20E /* MockNetworkSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockNetworkSession.swift; sourceTree = "<group>"; };
+		D4AB41352AD07E27004DB20E /* MockResponseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockResponseModel.swift; sourceTree = "<group>"; };
+		D4AB41382AD07E8C004DB20E /* APIResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIResponse.swift; sourceTree = "<group>"; };
+		D4AB413A2AD08D51004DB20E /* MockNetworkSessionBehavior.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockNetworkSessionBehavior.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +123,9 @@
 		D4A883C72ACF49DA00154A97 /* Wildfront */ = {
 			isa = PBXGroup;
 			children = (
+				D4A883F92ACF650100154A97 /* Configuration */,
+				D4AB41282AD0617D004DB20E /* Extensions */,
+				D4A883F22ACF611100154A97 /* Networking */,
 				D4A883C82ACF49DA00154A97 /* WildfrontApp.swift */,
 				D4A883CA2ACF49DA00154A97 /* ContentView.swift */,
 				D4A883CC2ACF49DC00154A97 /* Assets.xcassets */,
@@ -113,7 +145,10 @@
 		D4A883D82ACF49DC00154A97 /* WildfrontTests */ = {
 			isa = PBXGroup;
 			children = (
+				D4AB41252AD05E0F004DB20E /* Extensions */,
+				D4A884022ACF90DB00154A97 /* Networking */,
 				D4A883D92ACF49DC00154A97 /* WildfrontTests.swift */,
+				D4A884012ACF8F2E00154A97 /* Wildfront.xctestplan */,
 			);
 			path = WildfrontTests;
 			sourceTree = "<group>";
@@ -125,6 +160,63 @@
 				D4A883E52ACF49DC00154A97 /* WildfrontUITestsLaunchTests.swift */,
 			);
 			path = WildfrontUITests;
+			sourceTree = "<group>";
+		};
+		D4A883F22ACF611100154A97 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				D4A884032ACF92B500154A97 /* APIRequest.swift */,
+				D4A883F52ACF614200154A97 /* APIService.swift */,
+				D4A883FF2ACF6D1900154A97 /* NetworkError.swift */,
+				D4A884052ACF943A00154A97 /* Network.swift */,
+				D4AB41302AD07290004DB20E /* NetworkSession.swift */,
+				D4AB41382AD07E8C004DB20E /* APIResponse.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		D4A883F92ACF650100154A97 /* Configuration */ = {
+			isa = PBXGroup;
+			children = (
+				D4A883FA2ACF650E00154A97 /* Environment.swift */,
+			);
+			path = Configuration;
+			sourceTree = "<group>";
+		};
+		D4A884022ACF90DB00154A97 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				D4AB412B2AD06A32004DB20E /* Mocks */,
+				D4A884082ACF9C7700154A97 /* DefaultAPIServiceTests.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		D4AB41252AD05E0F004DB20E /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				D4AB41262AD05E1D004DB20E /* HTTPURLResponseExtensionTests.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		D4AB41282AD0617D004DB20E /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				D4AB41292AD06192004DB20E /* HTTPURLResponse+Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		D4AB412B2AD06A32004DB20E /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				D4AB41352AD07E27004DB20E /* MockResponseModel.swift */,
+				D4AB41232ACFADD7004DB20E /* MockAPIRequest.swift */,
+				D4AB41322AD0773A004DB20E /* MockNetworkSession.swift */,
+				D4AB413A2AD08D51004DB20E /* MockNetworkSessionBehavior.swift */,
+			);
+			path = Mocks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,6 +350,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				D4A883CB2ACF49DA00154A97 /* ContentView.swift in Sources */,
+				D4A883F62ACF614200154A97 /* APIService.swift in Sources */,
+				D4AB412A2AD06192004DB20E /* HTTPURLResponse+Extensions.swift in Sources */,
+				D4AB41392AD07E8C004DB20E /* APIResponse.swift in Sources */,
+				D4AB41312AD07290004DB20E /* NetworkSession.swift in Sources */,
+				D4A884062ACF943A00154A97 /* Network.swift in Sources */,
+				D4A883FB2ACF650E00154A97 /* Environment.swift in Sources */,
+				D4A884002ACF6D1900154A97 /* NetworkError.swift in Sources */,
+				D4A884042ACF92B500154A97 /* APIRequest.swift in Sources */,
 				D4A883C92ACF49DA00154A97 /* WildfrontApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -266,7 +366,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D4AB41272AD05E1D004DB20E /* HTTPURLResponseExtensionTests.swift in Sources */,
+				D4A884092ACF9C7700154A97 /* DefaultAPIServiceTests.swift in Sources */,
+				D4AB41332AD0773A004DB20E /* MockNetworkSession.swift in Sources */,
 				D4A883DA2ACF49DC00154A97 /* WildfrontTests.swift in Sources */,
+				D4AB413B2AD08D51004DB20E /* MockNetworkSessionBehavior.swift in Sources */,
+				D4AB41362AD07E27004DB20E /* MockResponseModel.swift in Sources */,
+				D4AB41242ACFADD7004DB20E /* MockAPIRequest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
