@@ -4,7 +4,7 @@ import Foundation
 ///
 struct Network {
     /// The base URL for API requests.
-    static var baseUrl = "developer.nps.gov/api/v1"
+    static var baseUrl = "https://developer.nps.gov/api/v1"
 
     /// Enum defining common HTTP header fields.
     ///
@@ -14,6 +14,9 @@ struct Network {
 
         /// The "Accept" header field used for specifying the expected media types.
         case acceptType = "Accept"
+
+        /// The HTTP header field for the API key.
+        case apiKey = "X-Api-Key"
 
         /// The "Authorization" header field used for including authentication credentials.
         case authorization = "Authorization"

@@ -8,10 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		D4A883C92ACF49DA00154A97 /* WildfrontApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4A883C82ACF49DA00154A97 /* WildfrontApp.swift */; };
-		D4A883CB2ACF49DA00154A97 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4A883CA2ACF49DA00154A97 /* ContentView.swift */; };
 		D4A883CD2ACF49DC00154A97 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D4A883CC2ACF49DC00154A97 /* Assets.xcassets */; };
 		D4A883D02ACF49DC00154A97 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D4A883CF2ACF49DC00154A97 /* Preview Assets.xcassets */; };
-		D4A883DA2ACF49DC00154A97 /* WildfrontTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4A883D92ACF49DC00154A97 /* WildfrontTests.swift */; };
 		D4A883E42ACF49DC00154A97 /* WildfrontUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4A883E32ACF49DC00154A97 /* WildfrontUITests.swift */; };
 		D4A883E62ACF49DC00154A97 /* WildfrontUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4A883E52ACF49DC00154A97 /* WildfrontUITestsLaunchTests.swift */; };
 		D4A883F62ACF614200154A97 /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4A883F52ACF614200154A97 /* APIService.swift */; };
@@ -28,6 +26,24 @@
 		D4AB41362AD07E27004DB20E /* MockResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4AB41352AD07E27004DB20E /* MockResponseModel.swift */; };
 		D4AB41392AD07E8C004DB20E /* APIResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4AB41382AD07E8C004DB20E /* APIResponse.swift */; };
 		D4AB413B2AD08D51004DB20E /* MockNetworkSessionBehavior.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4AB413A2AD08D51004DB20E /* MockNetworkSessionBehavior.swift */; };
+		D4AB41442AD09DE9004DB20E /* NationalParksRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4AB41432AD09DE9004DB20E /* NationalParksRequest.swift */; };
+		D4AB41472AD0D4C7004DB20E /* DefaultAPIRequestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4AB41462AD0D4C7004DB20E /* DefaultAPIRequestTests.swift */; };
+		D4AB41492AD0D4E0004DB20E /* NationalParksRequestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4AB41482AD0D4E0004DB20E /* NationalParksRequestTests.swift */; };
+		D4AB414C2AD0DD95004DB20E /* NationalParksRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4AB414B2AD0DD95004DB20E /* NationalParksRepository.swift */; };
+		D4CF7D262AD3C01000F60FC8 /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4CF7D252AD3C01000F60FC8 /* AppState.swift */; };
+		D4CF7D282AD3C0C500F60FC8 /* AppAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4CF7D272AD3C0C500F60FC8 /* AppAction.swift */; };
+		D4CF7D2A2AD3C0E700F60FC8 /* AppReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4CF7D292AD3C0E700F60FC8 /* AppReducer.swift */; };
+		D4CF7D2C2AD3C11000F60FC8 /* Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4CF7D2B2AD3C11000F60FC8 /* Store.swift */; };
+		D4CF7D342AD3C33F00F60FC8 /* NationalParksState.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4CF7D332AD3C33F00F60FC8 /* NationalParksState.swift */; };
+		D4CF7D362AD3C35F00F60FC8 /* NationalParksAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4CF7D352AD3C35F00F60FC8 /* NationalParksAction.swift */; };
+		D4CF7D382AD3C4B800F60FC8 /* NoOpAPIRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4CF7D372AD3C4B800F60FC8 /* NoOpAPIRequest.swift */; };
+		D4CF7D3B2AD3C57000F60FC8 /* NationalPark.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4CF7D3A2AD3C57000F60FC8 /* NationalPark.swift */; };
+		D4CF7D3D2AD3C5B200F60FC8 /* NationalParksReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4CF7D3C2AD3C5B200F60FC8 /* NationalParksReducer.swift */; };
+		D4CF7D402AD45D9200F60FC8 /* StoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4CF7D3F2AD45D9200F60FC8 /* StoreTests.swift */; };
+		D4CF7D422AD45EEC00F60FC8 /* ReducerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4CF7D412AD45EEC00F60FC8 /* ReducerTests.swift */; };
+		D4CF7D442AD466D700F60FC8 /* NationalParksView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4CF7D432AD466D700F60FC8 /* NationalParksView.swift */; };
+		D4CF7D462AD4889900F60FC8 /* NationalParksResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4CF7D452AD4889900F60FC8 /* NationalParksResponse.swift */; };
+		D4CF7D482AD4977D00F60FC8 /* Middleware.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4CF7D472AD4977D00F60FC8 /* Middleware.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,18 +66,15 @@
 /* Begin PBXFileReference section */
 		D4A883C52ACF49DA00154A97 /* Wildfront.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Wildfront.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D4A883C82ACF49DA00154A97 /* WildfrontApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WildfrontApp.swift; sourceTree = "<group>"; };
-		D4A883CA2ACF49DA00154A97 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		D4A883CC2ACF49DC00154A97 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D4A883CF2ACF49DC00154A97 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		D4A883D52ACF49DC00154A97 /* WildfrontTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WildfrontTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		D4A883D92ACF49DC00154A97 /* WildfrontTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WildfrontTests.swift; sourceTree = "<group>"; };
 		D4A883DF2ACF49DC00154A97 /* WildfrontUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WildfrontUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D4A883E32ACF49DC00154A97 /* WildfrontUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WildfrontUITests.swift; sourceTree = "<group>"; };
 		D4A883E52ACF49DC00154A97 /* WildfrontUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WildfrontUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		D4A883F52ACF614200154A97 /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
 		D4A883FA2ACF650E00154A97 /* Environment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Environment.swift; sourceTree = "<group>"; };
 		D4A883FF2ACF6D1900154A97 /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
-		D4A884012ACF8F2E00154A97 /* Wildfront.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = Wildfront.xctestplan; sourceTree = "<group>"; };
 		D4A884032ACF92B500154A97 /* APIRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIRequest.swift; sourceTree = "<group>"; };
 		D4A884052ACF943A00154A97 /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
 		D4A884082ACF9C7700154A97 /* DefaultAPIServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultAPIServiceTests.swift; sourceTree = "<group>"; };
@@ -73,6 +86,25 @@
 		D4AB41352AD07E27004DB20E /* MockResponseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockResponseModel.swift; sourceTree = "<group>"; };
 		D4AB41382AD07E8C004DB20E /* APIResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIResponse.swift; sourceTree = "<group>"; };
 		D4AB413A2AD08D51004DB20E /* MockNetworkSessionBehavior.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockNetworkSessionBehavior.swift; sourceTree = "<group>"; };
+		D4AB41432AD09DE9004DB20E /* NationalParksRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NationalParksRequest.swift; sourceTree = "<group>"; };
+		D4AB41462AD0D4C7004DB20E /* DefaultAPIRequestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultAPIRequestTests.swift; sourceTree = "<group>"; };
+		D4AB41482AD0D4E0004DB20E /* NationalParksRequestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NationalParksRequestTests.swift; sourceTree = "<group>"; };
+		D4AB414B2AD0DD95004DB20E /* NationalParksRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NationalParksRepository.swift; sourceTree = "<group>"; };
+		D4CF7D0C2AD11EFC00F60FC8 /* Wildfront.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; name = Wildfront.xctestplan; path = ../Wildfront.xctestplan; sourceTree = "<group>"; };
+		D4CF7D252AD3C01000F60FC8 /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
+		D4CF7D272AD3C0C500F60FC8 /* AppAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppAction.swift; sourceTree = "<group>"; };
+		D4CF7D292AD3C0E700F60FC8 /* AppReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppReducer.swift; sourceTree = "<group>"; };
+		D4CF7D2B2AD3C11000F60FC8 /* Store.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Store.swift; sourceTree = "<group>"; };
+		D4CF7D332AD3C33F00F60FC8 /* NationalParksState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NationalParksState.swift; sourceTree = "<group>"; };
+		D4CF7D352AD3C35F00F60FC8 /* NationalParksAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NationalParksAction.swift; sourceTree = "<group>"; };
+		D4CF7D372AD3C4B800F60FC8 /* NoOpAPIRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoOpAPIRequest.swift; sourceTree = "<group>"; };
+		D4CF7D3A2AD3C57000F60FC8 /* NationalPark.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NationalPark.swift; sourceTree = "<group>"; };
+		D4CF7D3C2AD3C5B200F60FC8 /* NationalParksReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NationalParksReducer.swift; sourceTree = "<group>"; };
+		D4CF7D3F2AD45D9200F60FC8 /* StoreTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreTests.swift; sourceTree = "<group>"; };
+		D4CF7D412AD45EEC00F60FC8 /* ReducerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReducerTests.swift; sourceTree = "<group>"; };
+		D4CF7D432AD466D700F60FC8 /* NationalParksView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NationalParksView.swift; sourceTree = "<group>"; };
+		D4CF7D452AD4889900F60FC8 /* NationalParksResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NationalParksResponse.swift; sourceTree = "<group>"; };
+		D4CF7D472AD4977D00F60FC8 /* Middleware.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Middleware.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,7 +135,9 @@
 		D4A883BC2ACF49DA00154A97 = {
 			isa = PBXGroup;
 			children = (
+				D4CF7D0C2AD11EFC00F60FC8 /* Wildfront.xctestplan */,
 				D4A883C72ACF49DA00154A97 /* Wildfront */,
+				D4A883C82ACF49DA00154A97 /* WildfrontApp.swift */,
 				D4A883D82ACF49DC00154A97 /* WildfrontTests */,
 				D4A883E22ACF49DC00154A97 /* WildfrontUITests */,
 				D4A883C62ACF49DA00154A97 /* Products */,
@@ -123,32 +157,24 @@
 		D4A883C72ACF49DA00154A97 /* Wildfront */ = {
 			isa = PBXGroup;
 			children = (
+				D4CF7D182AD19BBE00F60FC8 /* Application */,
 				D4A883F92ACF650100154A97 /* Configuration */,
 				D4AB41282AD0617D004DB20E /* Extensions */,
-				D4A883F22ACF611100154A97 /* Networking */,
-				D4A883C82ACF49DA00154A97 /* WildfrontApp.swift */,
-				D4A883CA2ACF49DA00154A97 /* ContentView.swift */,
-				D4A883CC2ACF49DC00154A97 /* Assets.xcassets */,
-				D4A883CE2ACF49DC00154A97 /* Preview Content */,
+				D4CF7D222AD3BB7000F60FC8 /* Features */,
+				D4CF7D392AD3C56000F60FC8 /* Models */,
+				D4AB413C2AD09842004DB20E /* Resources */,
+				D4AB413F2AD098F3004DB20E /* Services */,
+				D4CF7D242AD3BBFB00F60FC8 /* Store */,
 			);
 			path = Wildfront;
-			sourceTree = "<group>";
-		};
-		D4A883CE2ACF49DC00154A97 /* Preview Content */ = {
-			isa = PBXGroup;
-			children = (
-				D4A883CF2ACF49DC00154A97 /* Preview Assets.xcassets */,
-			);
-			path = "Preview Content";
 			sourceTree = "<group>";
 		};
 		D4A883D82ACF49DC00154A97 /* WildfrontTests */ = {
 			isa = PBXGroup;
 			children = (
+				D4CF7D3E2AD45D8900F60FC8 /* Store */,
 				D4AB41252AD05E0F004DB20E /* Extensions */,
 				D4A884022ACF90DB00154A97 /* Networking */,
-				D4A883D92ACF49DC00154A97 /* WildfrontTests.swift */,
-				D4A884012ACF8F2E00154A97 /* Wildfront.xctestplan */,
 			);
 			path = WildfrontTests;
 			sourceTree = "<group>";
@@ -162,17 +188,16 @@
 			path = WildfrontUITests;
 			sourceTree = "<group>";
 		};
-		D4A883F22ACF611100154A97 /* Networking */ = {
+		D4A883F22ACF611100154A97 /* Network */ = {
 			isa = PBXGroup;
 			children = (
-				D4A884032ACF92B500154A97 /* APIRequest.swift */,
+				D4AB41402AD09995004DB20E /* Models */,
+				D4AB41412AD099BA004DB20E /* Requests */,
+				D4AB41422AD099C8004DB20E /* Responses */,
 				D4A883F52ACF614200154A97 /* APIService.swift */,
-				D4A883FF2ACF6D1900154A97 /* NetworkError.swift */,
-				D4A884052ACF943A00154A97 /* Network.swift */,
 				D4AB41302AD07290004DB20E /* NetworkSession.swift */,
-				D4AB41382AD07E8C004DB20E /* APIResponse.swift */,
 			);
-			path = Networking;
+			path = Network;
 			sourceTree = "<group>";
 		};
 		D4A883F92ACF650100154A97 /* Configuration */ = {
@@ -186,6 +211,7 @@
 		D4A884022ACF90DB00154A97 /* Networking */ = {
 			isa = PBXGroup;
 			children = (
+				D4AB41452AD0D4BA004DB20E /* Requests */,
 				D4AB412B2AD06A32004DB20E /* Mocks */,
 				D4A884082ACF9C7700154A97 /* DefaultAPIServiceTests.swift */,
 			);
@@ -219,6 +245,124 @@
 			path = Mocks;
 			sourceTree = "<group>";
 		};
+		D4AB413C2AD09842004DB20E /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				D4A883CF2ACF49DC00154A97 /* Preview Assets.xcassets */,
+				D4A883CC2ACF49DC00154A97 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		D4AB413F2AD098F3004DB20E /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				D4A883F22ACF611100154A97 /* Network */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		D4AB41402AD09995004DB20E /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				D4A884052ACF943A00154A97 /* Network.swift */,
+				D4A883FF2ACF6D1900154A97 /* NetworkError.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		D4AB41412AD099BA004DB20E /* Requests */ = {
+			isa = PBXGroup;
+			children = (
+				D4A884032ACF92B500154A97 /* APIRequest.swift */,
+				D4AB41432AD09DE9004DB20E /* NationalParksRequest.swift */,
+				D4CF7D372AD3C4B800F60FC8 /* NoOpAPIRequest.swift */,
+			);
+			path = Requests;
+			sourceTree = "<group>";
+		};
+		D4AB41422AD099C8004DB20E /* Responses */ = {
+			isa = PBXGroup;
+			children = (
+				D4AB41382AD07E8C004DB20E /* APIResponse.swift */,
+				D4CF7D452AD4889900F60FC8 /* NationalParksResponse.swift */,
+			);
+			path = Responses;
+			sourceTree = "<group>";
+		};
+		D4AB41452AD0D4BA004DB20E /* Requests */ = {
+			isa = PBXGroup;
+			children = (
+				D4AB41462AD0D4C7004DB20E /* DefaultAPIRequestTests.swift */,
+				D4AB41482AD0D4E0004DB20E /* NationalParksRequestTests.swift */,
+			);
+			path = Requests;
+			sourceTree = "<group>";
+		};
+		D4CF7D182AD19BBE00F60FC8 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				D4CF7D192AD19BD200F60FC8 /* Repositories */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		D4CF7D192AD19BD200F60FC8 /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				D4AB414B2AD0DD95004DB20E /* NationalParksRepository.swift */,
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
+		D4CF7D222AD3BB7000F60FC8 /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				D4CF7D322AD3C32800F60FC8 /* NationalParks */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		D4CF7D242AD3BBFB00F60FC8 /* Store */ = {
+			isa = PBXGroup;
+			children = (
+				D4CF7D272AD3C0C500F60FC8 /* AppAction.swift */,
+				D4CF7D292AD3C0E700F60FC8 /* AppReducer.swift */,
+				D4CF7D252AD3C01000F60FC8 /* AppState.swift */,
+				D4CF7D2B2AD3C11000F60FC8 /* Store.swift */,
+				D4CF7D472AD4977D00F60FC8 /* Middleware.swift */,
+			);
+			path = Store;
+			sourceTree = "<group>";
+		};
+		D4CF7D322AD3C32800F60FC8 /* NationalParks */ = {
+			isa = PBXGroup;
+			children = (
+				D4CF7D332AD3C33F00F60FC8 /* NationalParksState.swift */,
+				D4CF7D352AD3C35F00F60FC8 /* NationalParksAction.swift */,
+				D4CF7D3C2AD3C5B200F60FC8 /* NationalParksReducer.swift */,
+				D4CF7D432AD466D700F60FC8 /* NationalParksView.swift */,
+			);
+			path = NationalParks;
+			sourceTree = "<group>";
+		};
+		D4CF7D392AD3C56000F60FC8 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				D4CF7D3A2AD3C57000F60FC8 /* NationalPark.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		D4CF7D3E2AD45D8900F60FC8 /* Store */ = {
+			isa = PBXGroup;
+			children = (
+				D4CF7D3F2AD45D9200F60FC8 /* StoreTests.swift */,
+				D4CF7D412AD45EEC00F60FC8 /* ReducerTests.swift */,
+			);
+			path = Store;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -235,6 +379,8 @@
 			dependencies = (
 			);
 			name = Wildfront;
+			packageProductDependencies = (
+			);
 			productName = Wildfront;
 			productReference = D4A883C52ACF49DA00154A97 /* Wildfront.app */;
 			productType = "com.apple.product-type.application";
@@ -307,6 +453,8 @@
 				Base,
 			);
 			mainGroup = D4A883BC2ACF49DA00154A97;
+			packageReferences = (
+			);
 			productRefGroup = D4A883C62ACF49DA00154A97 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -349,16 +497,29 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D4A883CB2ACF49DA00154A97 /* ContentView.swift in Sources */,
+				D4CF7D3B2AD3C57000F60FC8 /* NationalPark.swift in Sources */,
+				D4CF7D362AD3C35F00F60FC8 /* NationalParksAction.swift in Sources */,
 				D4A883F62ACF614200154A97 /* APIService.swift in Sources */,
 				D4AB412A2AD06192004DB20E /* HTTPURLResponse+Extensions.swift in Sources */,
+				D4CF7D462AD4889900F60FC8 /* NationalParksResponse.swift in Sources */,
+				D4CF7D2C2AD3C11000F60FC8 /* Store.swift in Sources */,
 				D4AB41392AD07E8C004DB20E /* APIResponse.swift in Sources */,
 				D4AB41312AD07290004DB20E /* NetworkSession.swift in Sources */,
 				D4A884062ACF943A00154A97 /* Network.swift in Sources */,
 				D4A883FB2ACF650E00154A97 /* Environment.swift in Sources */,
+				D4CF7D282AD3C0C500F60FC8 /* AppAction.swift in Sources */,
+				D4CF7D342AD3C33F00F60FC8 /* NationalParksState.swift in Sources */,
 				D4A884002ACF6D1900154A97 /* NetworkError.swift in Sources */,
+				D4CF7D3D2AD3C5B200F60FC8 /* NationalParksReducer.swift in Sources */,
+				D4CF7D2A2AD3C0E700F60FC8 /* AppReducer.swift in Sources */,
 				D4A884042ACF92B500154A97 /* APIRequest.swift in Sources */,
 				D4A883C92ACF49DA00154A97 /* WildfrontApp.swift in Sources */,
+				D4CF7D262AD3C01000F60FC8 /* AppState.swift in Sources */,
+				D4AB41442AD09DE9004DB20E /* NationalParksRequest.swift in Sources */,
+				D4CF7D482AD4977D00F60FC8 /* Middleware.swift in Sources */,
+				D4CF7D442AD466D700F60FC8 /* NationalParksView.swift in Sources */,
+				D4AB414C2AD0DD95004DB20E /* NationalParksRepository.swift in Sources */,
+				D4CF7D382AD3C4B800F60FC8 /* NoOpAPIRequest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -369,10 +530,13 @@
 				D4AB41272AD05E1D004DB20E /* HTTPURLResponseExtensionTests.swift in Sources */,
 				D4A884092ACF9C7700154A97 /* DefaultAPIServiceTests.swift in Sources */,
 				D4AB41332AD0773A004DB20E /* MockNetworkSession.swift in Sources */,
-				D4A883DA2ACF49DC00154A97 /* WildfrontTests.swift in Sources */,
 				D4AB413B2AD08D51004DB20E /* MockNetworkSessionBehavior.swift in Sources */,
 				D4AB41362AD07E27004DB20E /* MockResponseModel.swift in Sources */,
+				D4AB41492AD0D4E0004DB20E /* NationalParksRequestTests.swift in Sources */,
+				D4CF7D422AD45EEC00F60FC8 /* ReducerTests.swift in Sources */,
+				D4AB41472AD0D4C7004DB20E /* DefaultAPIRequestTests.swift in Sources */,
 				D4AB41242ACFADD7004DB20E /* MockAPIRequest.swift in Sources */,
+				D4CF7D402AD45D9200F60FC8 /* StoreTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -527,7 +691,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"Wildfront/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"Wildfront/Resources\"";
 				DEVELOPMENT_TEAM = 7G82ECD844;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -556,7 +720,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"Wildfront/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"Wildfront/Resources\"";
 				DEVELOPMENT_TEAM = 7G82ECD844;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;

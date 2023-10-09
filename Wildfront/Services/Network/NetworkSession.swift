@@ -19,9 +19,7 @@ struct DefaultNetworkSession: NetworkSession {
     /// - Parameter request: The URL request for which to create a data task publisher.
     /// - Returns: A data task publisher that emits data and response or an error.
     func dataTaskPublisher(for request: URLRequest) -> AnyPublisher<(data: Data, response: URLResponse), Error> {
-        // Use URLSession.shared to create a data task publisher.
-        return URLSession.shared.dataTaskPublisher(for: request)
-            // Map URLSession errors to the generic Error type.
+        URLSession.shared.dataTaskPublisher(for: request)
             .mapError { $0 as Error }
             .eraseToAnyPublisher()
     }

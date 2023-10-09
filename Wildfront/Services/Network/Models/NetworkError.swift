@@ -4,7 +4,7 @@ import Foundation
 ///
 enum NetworkError: Error {
     /// An error indicating that the URL used for the request is invalid.
-    case badURL
+    case invalidUrl
 
     /// An error indicating that the response received from the server is invalid.
     case invalidResponse

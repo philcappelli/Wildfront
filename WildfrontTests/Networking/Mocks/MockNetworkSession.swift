@@ -25,7 +25,7 @@ struct MockNetworkSession {
 extension MockNetworkSession: NetworkSession {
     func dataTaskPublisher(for request: URLRequest) -> AnyPublisher<(data: Data, response: URLResponse), Error> {
         switch behavior {
-            case .badUrl:
+            case .invalidUrl:
                 // Simulate a bad URL error.
                 let error = NSError(
                     domain: NSURLErrorDomain,

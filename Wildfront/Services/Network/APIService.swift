@@ -4,19 +4,16 @@ import Foundation
 /// Protocol defining the structure of an API service.
 ///
 protocol APIService {
-    /// Associated type for the request used by the service.
-    associatedtype RequestType: APIRequest
-
     /// Executes an API request and returns a publisher for the response.
     ///
     /// - Parameter request: The API request to be executed.
     /// - Returns: A publisher emitting a decoded response or an error.
-    func make<T: Decodable>(_ request: RequestType) -> AnyPublisher<T, Error>
+    func make<T: Decodable>(_ request: APIRequest) -> AnyPublisher<T, Error>
 }
 
 /// Default implementation of the APIService protocol.
 ///
-final class DefaultAPIService<RequestType: APIRequest> {
+final class DefaultAPIService {
     // MARK: - Properties
 
     /// The network session responsible for making network requests.
@@ -35,8 +32,19 @@ final class DefaultAPIService<RequestType: APIRequest> {
 // MARK: - APIService Implementation
 
 extension DefaultAPIService: APIService {
-    func make<T: Decodable>(_ request: RequestType) -> AnyPublisher<T, Error> {
-        let url = request.baseURL.appendingPathComponent(request.path)
+    func make<T: Decodable>(_ request: APIRequest) -> AnyPublisher<T, Error> {
+        var components = URLComponents(url: request.baseURL.appendingPathComponent(request.path), resolvingAgainstBaseURL: false)
+
+        // Check if there are parameters to add
+        if let parameters = request.parameters {
+            components?.queryItems = parameters.map { key, value in
+                URLQueryItem(name: key, value: "\(value)")
+            }
+        }
+
+        guard let url = components?.url else {
+            return Fail<T, Error>(error: NetworkError.invalidUrl).eraseToAnyPublisher()
+        }
 
         var urlRequest = URLRequest(url: url)
         urlRequest.httpMethod = request.method.rawValue
@@ -47,6 +55,7 @@ extension DefaultAPIService: APIService {
 
         return session.dataTaskPublisher(for: urlRequest)
             .subscribe(on: DispatchQueue.global(qos: .background))
+            .receive(on: DispatchQueue.main)
             .tryMap { data, response -> Data in
                 guard
                     let httpResponse = response as? HTTPURLResponse,
@@ -58,5 +67,18 @@ extension DefaultAPIService: APIService {
             .decode(type: T.self, decoder: JSONDecoder())
             .mapError { NetworkError.requestFailed($0) }
             .eraseToAnyPublisher()
+    }
+}
+
+extension Data {
+    /// Converts the data to a pretty-printed JSON string.
+    func prettyPrintedJSONString() -> String? {
+        do {
+            let jsonObject = try JSONSerialization.jsonObject(with: self, options: [])
+            let prettyPrintedData = try JSONSerialization.data(withJSONObject: jsonObject, options: .prettyPrinted)
+            return String(data: prettyPrintedData, encoding: .utf8)
+        } catch {
+            return nil
+        }
     }
 }

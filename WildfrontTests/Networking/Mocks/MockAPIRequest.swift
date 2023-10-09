@@ -2,62 +2,36 @@ import Foundation
 
 @testable import Wildfront
 
-/// A mock API request conforming to the `APIRequest` protocol and represents a simplified
-/// API request with properties such as `path`, `method`, `headers`, and `parameters`.
-///
+// Mock implementation of APIRequest for testing purposes.
 struct MockAPIRequest: APIRequest {
-    // MARK: - Properties
-
-    /// The base URL for the API request.
+    /// Provide a mock base URL.
     var baseURL: URL {
         URL(string: "https://example.com")!
     }
 
-    /// The HTTP headers to be included in the API request.
-    var headers: [String: String]?
-
-    /// The HTTP method for the API request, such as GET, POST, PUT, or DELETE.
-    var method: Network.HTTPMethod
-
-    /// The parameters to be included in the API request, typically for GET or POST requests.
-    var parameters: [String: String]?
-
-    /// The path for the API request, which specifies the endpoint.
-    var path: String
-
-    /// The URL constructed using the `baseURL`, `path`, and optional `parameters`.
-    var url: URL? {
-        var components = URLComponents(
-            url: baseURL.appendingPathComponent(path),
-            resolvingAgainstBaseURL: true
-        )
-
-        components?.queryItems = parameters?.map {
-            URLQueryItem(name: $0.key, value: $0.value)
-        }
-
-        return components?.url
+    /// Provide a mock path.
+    var path: String {
+        "/mockEndpoint"
     }
 
-    // MARK: - Initialization
+    /// Provide a mock HTTP method.
+    var method: Network.HTTPMethod {
+        .get
+    }
 
-    /// Initializes a `MockAPIRequest` with the specified parameters.
-    ///
-    /// - Parameters:
-    ///   - path: The path for the API request.
-    ///   - method: The HTTP method for the request (default is GET).
-    ///   - headers: Optional HTTP headers for the request.
-    ///   - parameters: Optional parameters to be included in the request.
-    ///
-    init(
-        path: String,
-        method: Network.HTTPMethod = .get,
-        headers: [String: String]? = nil,
-        parameters: [String: String]? = nil
-    ) {
-        self.path = path
-        self.method = method
-        self.headers = headers
-        self.parameters = parameters
+    /// Provide mock headers if needed.
+    var headers: [String: String]? {
+        [
+            "MockHeader1": "Value1",
+            "MockHeader2": "Value2"
+        ]
+    }
+
+    /// Provide mock parameters if needed.
+    var parameters: [String: Any]? {
+        [
+            "param1": "value1",
+            "param2": "value2"
+        ]
     }
 }

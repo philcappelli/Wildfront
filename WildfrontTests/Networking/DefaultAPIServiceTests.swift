@@ -13,10 +13,14 @@ class DefaultAPIServiceTests: XCTestCase {
     /// Set to store cancellables for cleanup after each test
     private var cancellables: Set<AnyCancellable> = []
 
+    /// Shared mock API request
+    private let mockRequest = MockAPIRequest()
+
     // MARK: - Lifecycle
 
     override func tearDown() {
         super.tearDown()
+
         // Cancel all active cancellables to avoid resource leaks
         cancellables.forEach {
             $0.cancel()
@@ -25,11 +29,8 @@ class DefaultAPIServiceTests: XCTestCase {
 
     /// Test a successful API request
     func testSuccessfulRequest() {
-        // Create a mock API request
-        let mockRequest = MockAPIRequest(path: "examplePath")
-
         // Create a DefaultAPIService instance with a MockNetworkSession that simulates a successful request
-        let apiService = DefaultAPIService<MockAPIRequest>(session: MockNetworkSession(behavior: .success))
+        let apiService = DefaultAPIService(session: MockNetworkSession(behavior: .success))
 
         // Create an expectation for the API request
         let expectation = expectation(description: "API Request Expectation")
@@ -67,11 +68,8 @@ class DefaultAPIServiceTests: XCTestCase {
 
     /// Test a failed API request
     func testFailedRequest() {
-        // Create a mock API request with an intentionally invalid path
-        let mockRequest = MockAPIRequest(path: "invalidPath")
-
         // Create a DefaultAPIService instance with a MockNetworkSession that simulates a failed request
-        let apiService = DefaultAPIService<MockAPIRequest>(session: MockNetworkSession(behavior: .failure))
+        let apiService = DefaultAPIService(session: MockNetworkSession(behavior: .failure))
 
         // Create an expectation for the API request
         let expectation = expectation(description: "API Request Expectation")
@@ -107,11 +105,8 @@ class DefaultAPIServiceTests: XCTestCase {
 
     /// Test a timeout during the API request
     func testTimeoutRequest() {
-        // Create a mock API request
-        let mockRequest = MockAPIRequest(path: "examplePath")
-
         // Create a DefaultAPIService instance with a MockNetworkSession that simulates a timeout
-        let apiService = DefaultAPIService<MockAPIRequest>(session: MockNetworkSession(behavior: .timeout))
+        let apiService = DefaultAPIService(session: MockNetworkSession(behavior: .timeout))
 
         // Create an expectation for the API request
         let expectation = expectation(description: "API Request Expectation")
@@ -148,11 +143,11 @@ class DefaultAPIServiceTests: XCTestCase {
     /// Test concurrent API requests
     func testConcurrentRequests() {
         // Create two mock API requests
-        let mockRequest1 = MockAPIRequest(path: "request1")
-        let mockRequest2 = MockAPIRequest(path: "request2")
+        let mockRequest1 = MockAPIRequest()
+        let mockRequest2 = MockAPIRequest()
 
         // Create a DefaultAPIService instance with the MockNetworkSession
-        let apiService = DefaultAPIService<MockAPIRequest>(session: MockNetworkSession(behavior: .success))
+        let apiService = DefaultAPIService(session: MockNetworkSession(behavior: .success))
 
         // Create expectations for both requests
         let expectation1 = expectation(description: "API Request 1 Expectation")
@@ -203,10 +198,10 @@ class DefaultAPIServiceTests: XCTestCase {
     /// Test a network request with a bad URL
     func testNetworkRequestWithBadURL() {
         // Create a mock API request with a bad URL
-        let mockRequest = MockAPIRequest(path: "invalidPath")
+        let mockRequest = MockAPIRequest()
 
         // Create a DefaultAPIService instance with a MockNetworkSession that simulates a bad URL request
-        let apiService = DefaultAPIService<MockAPIRequest>(session: MockNetworkSession(behavior: .badUrl))
+        let apiService = DefaultAPIService(session: MockNetworkSession(behavior: .invalidUrl))
 
         // Create an expectation for the API request
         let expectation = expectation(description: "API Request Expectation")

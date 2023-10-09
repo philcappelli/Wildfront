@@ -4,4 +4,4 @@ import Foundation
 ///
 /// Types conforming to `APIResponse` must be `Decodable`, allowing them to be
 /// deserialized from JSON data received from an API.
-protocol APIResponse: Decodable {}
+protocol APIResponse: Codable, Equatable {}

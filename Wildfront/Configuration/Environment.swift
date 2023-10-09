@@ -2,14 +2,14 @@ import Foundation
 
 /// Enum representing environment-specific configuration settings.
 ///
-enum Environment {
+enum Configuration {
     /// Static property for storing the API token used for network requests.
     static var apiToken: String {
-        return "" // add API token here
+        "8YVxqg3hFa92hvwByrW0BkxYHvSnjmMKAmt3CPAh"
     }
 
     /// Static property for defining the base URL of the API.
     static var baseURL: URL? {
-        return URL(string: Network.baseUrl)
+        URL(string: Network.baseUrl)
     }
 }
