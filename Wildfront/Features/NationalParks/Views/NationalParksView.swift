@@ -4,7 +4,7 @@ import SwiftUI
 /// A view that shows the list of the National Parks.
 ///
 struct NationalParksView: View {
-    // MAR: - Properties
+    // MARK: - Properties
 
     /// The search text used to handle searching for a park via the search bar.
     @State private var searchText = ""
@@ -14,6 +14,9 @@ struct NationalParksView: View {
 
     /// The store which handles the views state and dispatches actions.
     @State var store: Store<AppState, AppAction>
+
+    /// Indicates whether an alert should be presented.
+    @State private var isAlertPresented = false
 
     // MARK: - View
     
@@ -37,12 +40,23 @@ struct NationalParksView: View {
                 }
             }
             .listStyle(.plain)
-            .navigationTitle("National Parks")
+            .navigationTitle(Constants.navigationTitle)
         }
         .task {
             store.dispatch(.nationalParks(.fetchNationalParks))
         }
+        .alert(Constants.errorAlertTitle, isPresented: $isAlertPresented) {
+            Button(Constants.errorAlertButtonText, role: .cancel) {
+                isAlertPresented = false
+                store.dispatch(.nationalParks(.fetchNationalParks))
+            }
+        } message: {
+            Text(Constants.errorAlertMessage)
+        }
         .searchable(text: $searchText)
+        .onChange(of: store.state.nationalParksState.error) {
+            isAlertPresented = store.state.nationalParksState.error != nil
+        }
     }
 
     /// Returns an array of `NationalPark` objects that match the search criteria.

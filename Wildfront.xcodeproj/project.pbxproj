@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		D40B9B8A2AD5CA14005453B8 /* NationalParkImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = D40B9B892AD5CA14005453B8 /* NationalParkImage.swift */; };
+		D40B9B8C2AD5D031005453B8 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = D40B9B8B2AD5D031005453B8 /* Constants.swift */; };
 		D4A883C92ACF49DA00154A97 /* WildfrontApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4A883C82ACF49DA00154A97 /* WildfrontApp.swift */; };
 		D4A883CD2ACF49DC00154A97 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D4A883CC2ACF49DC00154A97 /* Assets.xcassets */; };
 		D4A883D02ACF49DC00154A97 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D4A883CF2ACF49DC00154A97 /* Preview Assets.xcassets */; };
@@ -75,6 +76,7 @@
 
 /* Begin PBXFileReference section */
 		D40B9B892AD5CA14005453B8 /* NationalParkImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NationalParkImage.swift; sourceTree = "<group>"; };
+		D40B9B8B2AD5D031005453B8 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		D4A883C52ACF49DA00154A97 /* Wildfront.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Wildfront.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D4A883C82ACF49DA00154A97 /* WildfrontApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WildfrontApp.swift; sourceTree = "<group>"; };
 		D4A883CC2ACF49DC00154A97 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -224,6 +226,7 @@
 			isa = PBXGroup;
 			children = (
 				D4A883FA2ACF650E00154A97 /* Environment.swift */,
+				D40B9B8B2AD5D031005453B8 /* Constants.swift */,
 			);
 			path = Configuration;
 			sourceTree = "<group>";
@@ -549,6 +552,7 @@
 				D4CF7D362AD3C35F00F60FC8 /* NationalParksAction.swift in Sources */,
 				D4A883F62ACF614200154A97 /* APIService.swift in Sources */,
 				D4CF7D4E2AD5043500F60FC8 /* NetworkingMiddleware.swift in Sources */,
+				D40B9B8C2AD5D031005453B8 /* Constants.swift in Sources */,
 				D4AB412A2AD06192004DB20E /* HTTPURLResponse+Extensions.swift in Sources */,
 				D4CF7D462AD4889900F60FC8 /* NationalParksResponse.swift in Sources */,
 				D4CF7D2C2AD3C11000F60FC8 /* Store.swift in Sources */,

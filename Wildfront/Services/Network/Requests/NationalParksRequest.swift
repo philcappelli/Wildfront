@@ -4,13 +4,13 @@ import Foundation
 ///
 class NationalParksRequest: DefaultAPIRequest {
     override var path: String {
-        "parks"
+        Constants.parks
     }
 
     override var parameters: [String : Any]? {
         [ 
-            "limit": 63,
-            "parkCode": ParkCodes.nationalParks
+            Constants.limit: 63,
+            Constants.parkCode: ParkCodes.nationalParks
                 .joined(separator: ",")
         ]
     }

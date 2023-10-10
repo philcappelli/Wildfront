@@ -13,6 +13,7 @@ func nationalParksReducer(
     switch action {
         case .fetchNationalParks:
             state.isLoading = true
+            state.error = nil
         case let .fetchNationalParksResult(result):
             state.isLoading = false
             switch result {

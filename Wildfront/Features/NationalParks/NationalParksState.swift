@@ -1,10 +1,3 @@
-//
-//  NationalParksState.swift
-//  Wildfront
-//
-//  Created by Philip on 10/9/23.
-//
-
 import Foundation
 
 /// Represents the state of the National Parks feature in the application.
