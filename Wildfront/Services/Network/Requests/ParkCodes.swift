@@ -1,5 +1,10 @@
 import Foundation
 
+/// A struct containing an array of national park codes.
+///
+/// The NationalParks API didnt have a good way to query just the national parks so i used the `parkCodes`
+/// query param to get the parks I wanted for the app.
+///
 struct ParkCodes {
     static let nationalParks: [String] = [
         "acad", "arch", "badl", "zion", "npsa", "badl", "yell", "grca", "romo", "grte",

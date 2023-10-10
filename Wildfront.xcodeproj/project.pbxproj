@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D40B9B8A2AD5CA14005453B8 /* NationalParkImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = D40B9B892AD5CA14005453B8 /* NationalParkImage.swift */; };
 		D4A883C92ACF49DA00154A97 /* WildfrontApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4A883C82ACF49DA00154A97 /* WildfrontApp.swift */; };
 		D4A883CD2ACF49DC00154A97 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D4A883CC2ACF49DC00154A97 /* Assets.xcassets */; };
 		D4A883D02ACF49DC00154A97 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D4A883CF2ACF49DC00154A97 /* Preview Assets.xcassets */; };
@@ -73,6 +74,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D40B9B892AD5CA14005453B8 /* NationalParkImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NationalParkImage.swift; sourceTree = "<group>"; };
 		D4A883C52ACF49DA00154A97 /* Wildfront.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Wildfront.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D4A883C82ACF49DA00154A97 /* WildfrontApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WildfrontApp.swift; sourceTree = "<group>"; };
 		D4A883CC2ACF49DC00154A97 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -371,6 +373,7 @@
 			isa = PBXGroup;
 			children = (
 				D4CF7D3A2AD3C57000F60FC8 /* NationalPark.swift */,
+				D40B9B892AD5CA14005453B8 /* NationalParkImage.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -542,6 +545,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D4CF7D3B2AD3C57000F60FC8 /* NationalPark.swift in Sources */,
+				D40B9B8A2AD5CA14005453B8 /* NationalParkImage.swift in Sources */,
 				D4CF7D362AD3C35F00F60FC8 /* NationalParksAction.swift in Sources */,
 				D4A883F62ACF614200154A97 /* APIService.swift in Sources */,
 				D4CF7D4E2AD5043500F60FC8 /* NetworkingMiddleware.swift in Sources */,

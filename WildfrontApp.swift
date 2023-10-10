@@ -7,6 +7,8 @@
 
 import SwiftUI
 
+/// The main entryway into the app.
+///
 @main
 struct WildfrontApp: App {
     @State private var store = Store(

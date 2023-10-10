@@ -1,5 +1,11 @@
 import Foundation
 
+/// A reducer function that processes National Parks-related actions and updates the state accordingly.
+///
+/// - Parameters:
+///   - state: The inout state representing the current National Parks state.
+///   - action: The National Parks action to be processed.
+///
 func nationalParksReducer(
     state: inout NationalParksState,
     action: NationalParksAction

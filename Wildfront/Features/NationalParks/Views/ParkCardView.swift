@@ -1,9 +1,18 @@
 import NukeUI
 import SwiftUI
 
+/// The view which represents a NationalPark.
+///
 struct ParkCardView: View {
+    // MARK: - Properties
+
+    /// The park used to populate the card details.
     let park: NationalPark
-    let cardHeight: CGFloat = 200
+
+    /// The height of the card.
+    let cardHeight: CGFloat = 250
+
+    // MARK: - Views
 
     var body: some View {
         ZStack(alignment: .bottom) {

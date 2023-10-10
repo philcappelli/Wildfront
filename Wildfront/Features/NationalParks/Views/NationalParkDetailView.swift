@@ -2,9 +2,18 @@ import MapKit
 import NukeUI
 import SwiftUI
 
+/// A view that handles showcasing the details for a NationalPark
+///
 struct ParkDetailsView: View {
+    // MARK: - Properties
+
+    /// The park that we are showing the details for
     let park: NationalPark
+
+    /// The region for the map showing the parks location
     @State private var region: MKCoordinateRegion?
+
+    // MARK: - View
 
     var body: some View {
         ScrollView {
@@ -58,7 +67,8 @@ struct ParkDetailsView: View {
                     .padding(.all, 20)
                 }
             }
-        }.onAppear {
+        }
+        .onAppear {
             region = MKCoordinateRegion(
                 center: CLLocationCoordinate2D(
                     latitude: Double(park.latitude) ?? 0.0,
