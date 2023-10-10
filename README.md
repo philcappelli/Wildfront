@@ -30,7 +30,7 @@ Search Functionality: Easily search for a specific national park by name, making
 Intuitive UI: A user-friendly interface that provides a seamless experience, allowing you to navigate through park details effortlessly.
 
 ## API Key
-To access the National Parks Service APId, an API key is needed. Search the codebase for <INSERT API Key> (within Enviroment.swift) 
+To access the National Parks Service APId, an API key is needed. Search the codebase for "<INSERT API Key>" (within Enviroment.swift) 
 and replace it with the valid key.  You can also get your own from the NPS website (https://www.nps.gov/subjects/developer/get-started.htm)
 
 ## App Architecture
