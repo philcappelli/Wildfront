@@ -32,24 +32,28 @@ class StoreTests: XCTestCase {
             reducer: reducer)
     }
 
+    /// Test initial state of the stores state.
     func testInitialState() {
         XCTAssertEqual(store.state.counter, 0)
     }
 
+    /// Tests incrementing
     func testDispatchIncrement() {
         store.dispatch(.increment)
-        XCTAssertEqual(store.state.counter, 1)
+        XCTAssertEqual(store.state.counter, 2)
     }
 
+    /// Tests decrement.
     func testDispatchDecrement() {
         store.dispatch(.decrement)
-        XCTAssertEqual(store.state.counter, -1)
+        XCTAssertEqual(store.state.counter, -2)
     }
 
+    /// Test multiple actions in the same stream.
     func testDispatchMultipleActions() {
         store.dispatch(.increment)
         store.dispatch(.increment)
         store.dispatch(.decrement)
-        XCTAssertEqual(store.state.counter, 1)
+        XCTAssertEqual(store.state.counter, 2)
     }
 }

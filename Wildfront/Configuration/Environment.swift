@@ -5,7 +5,7 @@ import Foundation
 enum Environment {
     /// Static property for storing the API token used for network requests.
     static var apiToken: String {
-        "8YVxqg3hFa92hvwByrW0BkxYHvSnjmMKAmt3CPAh"
+        "<Insert API Key>"
     }
 
     /// Static property for defining the base URL of the API.

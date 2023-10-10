@@ -3,6 +3,7 @@ import Foundation
 
 @testable import Wildfront
 
+/// A Mock repository used for testing.
 class MockNationalParksRepository: NationalParksRepository {
     private let isSuccess: Bool
 
@@ -12,15 +13,8 @@ class MockNationalParksRepository: NationalParksRepository {
 
     func fetchNationalParks() -> AnyPublisher<NationalParksResponse, Error> {
         if isSuccess {
-            let mockNationalParks = [
-                NationalPark(fullName: "Yellowstone National Park"),
-                NationalPark(fullName: "Yosemite National Park"),
-                NationalPark(fullName: "Grand Canyon National Park")
-            ]
-
             let response = NationalParksResponse(
-                start: "0",
-                data: mockNationalParks
+                data: NationalPark.fixtures()
             )
 
             return Result.Publisher(response)

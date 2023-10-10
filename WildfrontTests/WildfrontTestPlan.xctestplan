@@ -1,0 +1,24 @@
+{
+  "configurations" : [
+    {
+      "id" : "AF817A8B-4D2D-4C53-BCD4-E5049B3C2B93",
+      "name" : "Configuration 1",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+    "testTimeoutsEnabled" : true
+  },
+  "testTargets" : [
+    {
+      "target" : {
+        "containerPath" : "container:Wildfront.xcodeproj",
+        "identifier" : "D4A883D42ACF49DC00154A97",
+        "name" : "WildfrontTests"
+      }
+    }
+  ],
+  "version" : 1
+}

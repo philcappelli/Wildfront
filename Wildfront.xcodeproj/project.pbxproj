@@ -9,8 +9,13 @@
 /* Begin PBXBuildFile section */
 		D40B9B8A2AD5CA14005453B8 /* NationalParkImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = D40B9B892AD5CA14005453B8 /* NationalParkImage.swift */; };
 		D40B9B8C2AD5D031005453B8 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = D40B9B8B2AD5D031005453B8 /* Constants.swift */; };
+		D40B9B922AD5D28F005453B8 /* NationalParksViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D40B9B912AD5D28F005453B8 /* NationalParksViewTests.swift */; };
+		D40B9B9A2AD5D5AD005453B8 /* SnapshotTesting in Frameworks */ = {isa = PBXBuildFile; productRef = D40B9B992AD5D5AD005453B8 /* SnapshotTesting */; };
+		D40B9B9C2AD5D5B1005453B8 /* ViewInspector in Frameworks */ = {isa = PBXBuildFile; productRef = D40B9B9B2AD5D5B1005453B8 /* ViewInspector */; };
+		D40B9B9E2AD5D981005453B8 /* ParkCardViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D40B9B9D2AD5D981005453B8 /* ParkCardViewTests.swift */; };
+		D40B9BA22AD5DB48005453B8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D40B9BA12AD5DB48005453B8 /* Assets.xcassets */; };
+		D40B9BA52AD5DBAF005453B8 /* NationalParks+Fixtures.swift in Sources */ = {isa = PBXBuildFile; fileRef = D40B9BA42AD5DBAF005453B8 /* NationalParks+Fixtures.swift */; };
 		D4A883C92ACF49DA00154A97 /* WildfrontApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4A883C82ACF49DA00154A97 /* WildfrontApp.swift */; };
-		D4A883CD2ACF49DC00154A97 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D4A883CC2ACF49DC00154A97 /* Assets.xcassets */; };
 		D4A883D02ACF49DC00154A97 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D4A883CF2ACF49DC00154A97 /* Preview Assets.xcassets */; };
 		D4A883E42ACF49DC00154A97 /* WildfrontUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4A883E32ACF49DC00154A97 /* WildfrontUITests.swift */; };
 		D4A883E62ACF49DC00154A97 /* WildfrontUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4A883E52ACF49DC00154A97 /* WildfrontUITestsLaunchTests.swift */; };
@@ -53,7 +58,6 @@
 		D4CF7D562AD5172900F60FC8 /* ParkCodes.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4CF7D552AD5172900F60FC8 /* ParkCodes.swift */; };
 		D4CF7D582AD57F3A00F60FC8 /* NationalParkDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4CF7D572AD57F3A00F60FC8 /* NationalParkDetailView.swift */; };
 		D4CF7D5B2AD5810200F60FC8 /* ParkCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4CF7D5A2AD5810200F60FC8 /* ParkCardView.swift */; };
-		D4CF7D5E2AD5833900F60FC8 /* Nuke in Frameworks */ = {isa = PBXBuildFile; productRef = D4CF7D5D2AD5833900F60FC8 /* Nuke */; };
 		D4CF7D602AD583B300F60FC8 /* NukeUI in Frameworks */ = {isa = PBXBuildFile; productRef = D4CF7D5F2AD583B300F60FC8 /* NukeUI */; };
 /* End PBXBuildFile section */
 
@@ -77,9 +81,13 @@
 /* Begin PBXFileReference section */
 		D40B9B892AD5CA14005453B8 /* NationalParkImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NationalParkImage.swift; sourceTree = "<group>"; };
 		D40B9B8B2AD5D031005453B8 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		D40B9B912AD5D28F005453B8 /* NationalParksViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NationalParksViewTests.swift; sourceTree = "<group>"; };
+		D40B9B9D2AD5D981005453B8 /* ParkCardViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParkCardViewTests.swift; sourceTree = "<group>"; };
+		D40B9BA02AD5DA7F005453B8 /* WildfrontTestPlan.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = WildfrontTestPlan.xctestplan; sourceTree = "<group>"; };
+		D40B9BA12AD5DB48005453B8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D40B9BA42AD5DBAF005453B8 /* NationalParks+Fixtures.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NationalParks+Fixtures.swift"; sourceTree = "<group>"; };
 		D4A883C52ACF49DA00154A97 /* Wildfront.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Wildfront.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D4A883C82ACF49DA00154A97 /* WildfrontApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WildfrontApp.swift; sourceTree = "<group>"; };
-		D4A883CC2ACF49DC00154A97 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D4A883CF2ACF49DC00154A97 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		D4A883D52ACF49DC00154A97 /* WildfrontTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WildfrontTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D4A883DF2ACF49DC00154A97 /* WildfrontUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WildfrontUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -103,7 +111,6 @@
 		D4AB41462AD0D4C7004DB20E /* DefaultAPIRequestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultAPIRequestTests.swift; sourceTree = "<group>"; };
 		D4AB41482AD0D4E0004DB20E /* NationalParksRequestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NationalParksRequestTests.swift; sourceTree = "<group>"; };
 		D4AB414B2AD0DD95004DB20E /* NationalParksRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NationalParksRepository.swift; sourceTree = "<group>"; };
-		D4CF7D0C2AD11EFC00F60FC8 /* Wildfront.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; name = Wildfront.xctestplan; path = ../Wildfront.xctestplan; sourceTree = "<group>"; };
 		D4CF7D252AD3C01000F60FC8 /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
 		D4CF7D272AD3C0C500F60FC8 /* AppAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppAction.swift; sourceTree = "<group>"; };
 		D4CF7D292AD3C0E700F60FC8 /* AppReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppReducer.swift; sourceTree = "<group>"; };
@@ -132,7 +139,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D4CF7D5E2AD5833900F60FC8 /* Nuke in Frameworks */,
 				D4CF7D602AD583B300F60FC8 /* NukeUI in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -141,6 +147,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D40B9B9A2AD5D5AD005453B8 /* SnapshotTesting in Frameworks */,
+				D40B9B9C2AD5D5B1005453B8 /* ViewInspector in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -154,15 +162,39 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D40B9B902AD5D26C005453B8 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				D40B9B912AD5D28F005453B8 /* NationalParksViewTests.swift */,
+				D40B9B9D2AD5D981005453B8 /* ParkCardViewTests.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		D40B9B982AD5D5AD005453B8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D40B9BA32AD5DBA1005453B8 /* Fixtures */ = {
+			isa = PBXGroup;
+			children = (
+				D40B9BA42AD5DBAF005453B8 /* NationalParks+Fixtures.swift */,
+			);
+			path = Fixtures;
+			sourceTree = "<group>";
+		};
 		D4A883BC2ACF49DA00154A97 = {
 			isa = PBXGroup;
 			children = (
 				D4A883C72ACF49DA00154A97 /* Wildfront */,
 				D4A883C82ACF49DA00154A97 /* WildfrontApp.swift */,
-				D4CF7D0C2AD11EFC00F60FC8 /* Wildfront.xctestplan */,
 				D4A883D82ACF49DC00154A97 /* WildfrontTests */,
 				D4A883E22ACF49DC00154A97 /* WildfrontUITests */,
 				D4A883C62ACF49DA00154A97 /* Products */,
+				D40B9B982AD5D5AD005453B8 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -194,9 +226,11 @@
 		D4A883D82ACF49DC00154A97 /* WildfrontTests */ = {
 			isa = PBXGroup;
 			children = (
-				D4CF7D3E2AD45D8900F60FC8 /* Store */,
+				D40B9BA02AD5DA7F005453B8 /* WildfrontTestPlan.xctestplan */,
 				D4AB41252AD05E0F004DB20E /* Extensions */,
 				D4A884022ACF90DB00154A97 /* Networking */,
+				D4CF7D3E2AD45D8900F60FC8 /* Store */,
+				D40B9B902AD5D26C005453B8 /* Views */,
 			);
 			path = WildfrontTests;
 			sourceTree = "<group>";
@@ -273,8 +307,8 @@
 		D4AB413C2AD09842004DB20E /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				D40B9BA12AD5DB48005453B8 /* Assets.xcassets */,
 				D4A883CF2ACF49DC00154A97 /* Preview Assets.xcassets */,
-				D4A883CC2ACF49DC00154A97 /* Assets.xcassets */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -375,6 +409,7 @@
 		D4CF7D392AD3C56000F60FC8 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				D40B9BA32AD5DBA1005453B8 /* Fixtures */,
 				D4CF7D3A2AD3C57000F60FC8 /* NationalPark.swift */,
 				D40B9B892AD5CA14005453B8 /* NationalParkImage.swift */,
 			);
@@ -427,7 +462,6 @@
 			);
 			name = Wildfront;
 			packageProductDependencies = (
-				D4CF7D5D2AD5833900F60FC8 /* Nuke */,
 				D4CF7D5F2AD583B300F60FC8 /* NukeUI */,
 			);
 			productName = Wildfront;
@@ -448,6 +482,10 @@
 				D4A883D72ACF49DC00154A97 /* PBXTargetDependency */,
 			);
 			name = WildfrontTests;
+			packageProductDependencies = (
+				D40B9B992AD5D5AD005453B8 /* SnapshotTesting */,
+				D40B9B9B2AD5D5B1005453B8 /* ViewInspector */,
+			);
 			productName = WildfrontTests;
 			productReference = D4A883D52ACF49DC00154A97 /* WildfrontTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
@@ -504,6 +542,8 @@
 			mainGroup = D4A883BC2ACF49DA00154A97;
 			packageReferences = (
 				D4CF7D5C2AD5833900F60FC8 /* XCRemoteSwiftPackageReference "Nuke" */,
+				D40B9B8D2AD5D24A005453B8 /* XCRemoteSwiftPackageReference "swift-snapshot-testing" */,
+				D40B9B952AD5D2F6005453B8 /* XCRemoteSwiftPackageReference "ViewInspector" */,
 			);
 			productRefGroup = D4A883C62ACF49DA00154A97 /* Products */;
 			projectDirPath = "";
@@ -521,8 +561,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D40B9BA22AD5DB48005453B8 /* Assets.xcassets in Resources */,
 				D4A883D02ACF49DC00154A97 /* Preview Assets.xcassets in Resources */,
-				D4A883CD2ACF49DC00154A97 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -548,6 +588,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D4CF7D3B2AD3C57000F60FC8 /* NationalPark.swift in Sources */,
+				D40B9BA52AD5DBAF005453B8 /* NationalParks+Fixtures.swift in Sources */,
 				D40B9B8A2AD5CA14005453B8 /* NationalParkImage.swift in Sources */,
 				D4CF7D362AD3C35F00F60FC8 /* NationalParksAction.swift in Sources */,
 				D4A883F62ACF614200154A97 /* APIService.swift in Sources */,
@@ -583,6 +624,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D40B9B922AD5D28F005453B8 /* NationalParksViewTests.swift in Sources */,
 				D4AB41272AD05E1D004DB20E /* HTTPURLResponseExtensionTests.swift in Sources */,
 				D4A884092ACF9C7700154A97 /* DefaultAPIServiceTests.swift in Sources */,
 				D4AB41332AD0773A004DB20E /* MockNetworkSession.swift in Sources */,
@@ -591,6 +633,7 @@
 				D4AB41492AD0D4E0004DB20E /* NationalParksRequestTests.swift in Sources */,
 				D4CF7D422AD45EEC00F60FC8 /* ReducerTests.swift in Sources */,
 				D4CF7D522AD504C300F60FC8 /* MockNationalParksRepository.swift in Sources */,
+				D40B9B9E2AD5D981005453B8 /* ParkCardViewTests.swift in Sources */,
 				D4AB41472AD0D4C7004DB20E /* DefaultAPIRequestTests.swift in Sources */,
 				D4CF7D542AD50BFC00F60FC8 /* NetworkSessionTests.swift in Sources */,
 				D4AB41242ACFADD7004DB20E /* MockAPIRequest.swift in Sources */,
@@ -925,6 +968,22 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		D40B9B8D2AD5D24A005453B8 /* XCRemoteSwiftPackageReference "swift-snapshot-testing" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/pointfreeco/swift-snapshot-testing";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.14.1;
+			};
+		};
+		D40B9B952AD5D2F6005453B8 /* XCRemoteSwiftPackageReference "ViewInspector" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/nalexn/ViewInspector";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.9.8;
+			};
+		};
 		D4CF7D5C2AD5833900F60FC8 /* XCRemoteSwiftPackageReference "Nuke" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/kean/Nuke";
@@ -936,10 +995,15 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		D4CF7D5D2AD5833900F60FC8 /* Nuke */ = {
+		D40B9B992AD5D5AD005453B8 /* SnapshotTesting */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = D4CF7D5C2AD5833900F60FC8 /* XCRemoteSwiftPackageReference "Nuke" */;
-			productName = Nuke;
+			package = D40B9B8D2AD5D24A005453B8 /* XCRemoteSwiftPackageReference "swift-snapshot-testing" */;
+			productName = SnapshotTesting;
+		};
+		D40B9B9B2AD5D5B1005453B8 /* ViewInspector */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D40B9B952AD5D2F6005453B8 /* XCRemoteSwiftPackageReference "ViewInspector" */;
+			productName = ViewInspector;
 		};
 		D4CF7D5F2AD583B300F60FC8 /* NukeUI */ = {
 			isa = XCSwiftPackageProductDependency;

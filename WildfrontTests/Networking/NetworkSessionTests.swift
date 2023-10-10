@@ -3,7 +3,9 @@ import Combine
 
 @testable import Wildfront
 
+/// Network Session Tests
 class NetworkSessionTests: XCTestCase {
+    /// Test the default network session is behaving as expected.
     func testDefaultNetworkSession() {
         let networkSession: NetworkSession = DefaultNetworkSession()
 
