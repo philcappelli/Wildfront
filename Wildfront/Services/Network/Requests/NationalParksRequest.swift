@@ -9,10 +9,9 @@ class NationalParksRequest: DefaultAPIRequest {
 
     override var parameters: [String : Any]? {
         [ 
-            "q": "national",
-            "parkCode": "zion"
+            "limit": 63,
+            "parkCode": ParkCodes.nationalParks
+                .joined(separator: ",")
         ]
     }
 }
-
-//acad,arch,badl,

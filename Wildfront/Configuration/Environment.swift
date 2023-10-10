@@ -2,7 +2,7 @@ import Foundation
 
 /// Enum representing environment-specific configuration settings.
 ///
-enum Configuration {
+enum Environment {
     /// Static property for storing the API token used for network requests.
     static var apiToken: String {
         "8YVxqg3hFa92hvwByrW0BkxYHvSnjmMKAmt3CPAh"

@@ -19,7 +19,28 @@ final class Store<AppState, AppAction> {
         self.reducer = reducer
     }
 
+//    func dispatch(_ action: AppAction) {
+//        var next: (AppAction) -> Void = { [weak self] action in
+//            guard let self else { return }
+//            self.reducer(&self.state, action)
+//        }
+//
+//        for middleware in middleware {
+//            let previousMiddleware = next
+//            next = { [weak self] in
+//                guard let self else { return }
+//                middleware(self.state, $0, previousMiddleware)
+//            }
+//        }
+//
+//        next(action)
+//        reducer(&self.state, action)
+//    }
+
     func dispatch(_ action: AppAction) {
+        // Update the state first (before middleware)
+        reducer(&self.state, action)
+
         var next: (AppAction) -> Void = { [weak self] action in
             guard let self else { return }
             self.reducer(&self.state, action)
@@ -33,6 +54,7 @@ final class Store<AppState, AppAction> {
             }
         }
 
-        next(action)
+        next(action) // This call triggers the middleware chain
     }
+
 }

@@ -24,7 +24,7 @@ protocol APIRequest {
 class DefaultAPIRequest: APIRequest {
     /// The base URL of the API. Defaults to the value provided in Environment.
     var baseURL: URL {
-        guard let baseUrl = Configuration.baseURL else {
+        guard let baseUrl = Environment.baseURL else {
             fatalError("Base URL is not provided. You must set it in Environment.")
         }
 
@@ -33,7 +33,7 @@ class DefaultAPIRequest: APIRequest {
 
     /// Optional HTTP headers to include in the request. Defaults to an API key header if available.
     var headers: [String: String]? {
-        [ Network.HTTPHeaderField.apiKey.rawValue: Configuration.apiToken ]
+        [ Network.HTTPHeaderField.apiKey.rawValue: Environment.apiToken ]
     }
 
     /// The HTTP method to be used for the request. Defaults to GET.

@@ -48,6 +48,11 @@
 		D4CF7D502AD5047100F60FC8 /* MiddlewareTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4CF7D4F2AD5047100F60FC8 /* MiddlewareTests.swift */; };
 		D4CF7D522AD504C300F60FC8 /* MockNationalParksRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4CF7D512AD504C300F60FC8 /* MockNationalParksRepository.swift */; };
 		D4CF7D542AD50BFC00F60FC8 /* NetworkSessionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4CF7D532AD50BFC00F60FC8 /* NetworkSessionTests.swift */; };
+		D4CF7D562AD5172900F60FC8 /* ParkCodes.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4CF7D552AD5172900F60FC8 /* ParkCodes.swift */; };
+		D4CF7D582AD57F3A00F60FC8 /* NationalParkDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4CF7D572AD57F3A00F60FC8 /* NationalParkDetailView.swift */; };
+		D4CF7D5B2AD5810200F60FC8 /* ParkCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4CF7D5A2AD5810200F60FC8 /* ParkCardView.swift */; };
+		D4CF7D5E2AD5833900F60FC8 /* Nuke in Frameworks */ = {isa = PBXBuildFile; productRef = D4CF7D5D2AD5833900F60FC8 /* Nuke */; };
+		D4CF7D602AD583B300F60FC8 /* NukeUI in Frameworks */ = {isa = PBXBuildFile; productRef = D4CF7D5F2AD583B300F60FC8 /* NukeUI */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -113,6 +118,9 @@
 		D4CF7D4F2AD5047100F60FC8 /* MiddlewareTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MiddlewareTests.swift; sourceTree = "<group>"; };
 		D4CF7D512AD504C300F60FC8 /* MockNationalParksRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockNationalParksRepository.swift; sourceTree = "<group>"; };
 		D4CF7D532AD50BFC00F60FC8 /* NetworkSessionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkSessionTests.swift; sourceTree = "<group>"; };
+		D4CF7D552AD5172900F60FC8 /* ParkCodes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParkCodes.swift; sourceTree = "<group>"; };
+		D4CF7D572AD57F3A00F60FC8 /* NationalParkDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NationalParkDetailView.swift; sourceTree = "<group>"; };
+		D4CF7D5A2AD5810200F60FC8 /* ParkCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParkCardView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,6 +128,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D4CF7D5E2AD5833900F60FC8 /* Nuke in Frameworks */,
+				D4CF7D602AD583B300F60FC8 /* NukeUI in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -143,9 +153,9 @@
 		D4A883BC2ACF49DA00154A97 = {
 			isa = PBXGroup;
 			children = (
-				D4CF7D0C2AD11EFC00F60FC8 /* Wildfront.xctestplan */,
 				D4A883C72ACF49DA00154A97 /* Wildfront */,
 				D4A883C82ACF49DA00154A97 /* WildfrontApp.swift */,
+				D4CF7D0C2AD11EFC00F60FC8 /* Wildfront.xctestplan */,
 				D4A883D82ACF49DC00154A97 /* WildfrontTests */,
 				D4A883E22ACF49DC00154A97 /* WildfrontUITests */,
 				D4A883C62ACF49DA00154A97 /* Products */,
@@ -287,6 +297,7 @@
 				D4A884032ACF92B500154A97 /* APIRequest.swift */,
 				D4AB41432AD09DE9004DB20E /* NationalParksRequest.swift */,
 				D4CF7D372AD3C4B800F60FC8 /* NoOpAPIRequest.swift */,
+				D4CF7D552AD5172900F60FC8 /* ParkCodes.swift */,
 			);
 			path = Requests;
 			sourceTree = "<group>";
@@ -348,10 +359,10 @@
 		D4CF7D322AD3C32800F60FC8 /* NationalParks */ = {
 			isa = PBXGroup;
 			children = (
+				D4CF7D592AD580F000F60FC8 /* Views */,
 				D4CF7D332AD3C33F00F60FC8 /* NationalParksState.swift */,
 				D4CF7D352AD3C35F00F60FC8 /* NationalParksAction.swift */,
 				D4CF7D3C2AD3C5B200F60FC8 /* NationalParksReducer.swift */,
-				D4CF7D432AD466D700F60FC8 /* NationalParksView.swift */,
 			);
 			path = NationalParks;
 			sourceTree = "<group>";
@@ -383,6 +394,16 @@
 			path = Middleware;
 			sourceTree = "<group>";
 		};
+		D4CF7D592AD580F000F60FC8 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				D4CF7D572AD57F3A00F60FC8 /* NationalParkDetailView.swift */,
+				D4CF7D432AD466D700F60FC8 /* NationalParksView.swift */,
+				D4CF7D5A2AD5810200F60FC8 /* ParkCardView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -400,6 +421,8 @@
 			);
 			name = Wildfront;
 			packageProductDependencies = (
+				D4CF7D5D2AD5833900F60FC8 /* Nuke */,
+				D4CF7D5F2AD583B300F60FC8 /* NukeUI */,
 			);
 			productName = Wildfront;
 			productReference = D4A883C52ACF49DA00154A97 /* Wildfront.app */;
@@ -474,6 +497,7 @@
 			);
 			mainGroup = D4A883BC2ACF49DA00154A97;
 			packageReferences = (
+				D4CF7D5C2AD5833900F60FC8 /* XCRemoteSwiftPackageReference "Nuke" */,
 			);
 			productRefGroup = D4A883C62ACF49DA00154A97 /* Products */;
 			projectDirPath = "";
@@ -528,8 +552,10 @@
 				D4AB41312AD07290004DB20E /* NetworkSession.swift in Sources */,
 				D4A884062ACF943A00154A97 /* Network.swift in Sources */,
 				D4A883FB2ACF650E00154A97 /* Environment.swift in Sources */,
+				D4CF7D582AD57F3A00F60FC8 /* NationalParkDetailView.swift in Sources */,
 				D4CF7D282AD3C0C500F60FC8 /* AppAction.swift in Sources */,
 				D4CF7D342AD3C33F00F60FC8 /* NationalParksState.swift in Sources */,
+				D4CF7D562AD5172900F60FC8 /* ParkCodes.swift in Sources */,
 				D4A884002ACF6D1900154A97 /* NetworkError.swift in Sources */,
 				D4CF7D3D2AD3C5B200F60FC8 /* NationalParksReducer.swift in Sources */,
 				D4CF7D2A2AD3C0E700F60FC8 /* AppReducer.swift in Sources */,
@@ -541,6 +567,7 @@
 				D4CF7D442AD466D700F60FC8 /* NationalParksView.swift in Sources */,
 				D4AB414C2AD0DD95004DB20E /* NationalParksRepository.swift in Sources */,
 				D4CF7D382AD3C4B800F60FC8 /* NoOpAPIRequest.swift in Sources */,
+				D4CF7D5B2AD5810200F60FC8 /* ParkCardView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -722,8 +749,8 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -731,9 +758,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = io.onyxstudios.Wildfront;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -751,8 +781,8 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -760,9 +790,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = io.onyxstudios.Wildfront;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -882,6 +915,30 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		D4CF7D5C2AD5833900F60FC8 /* XCRemoteSwiftPackageReference "Nuke" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/kean/Nuke";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 12.1.6;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		D4CF7D5D2AD5833900F60FC8 /* Nuke */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D4CF7D5C2AD5833900F60FC8 /* XCRemoteSwiftPackageReference "Nuke" */;
+			productName = Nuke;
+		};
+		D4CF7D5F2AD583B300F60FC8 /* NukeUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D4CF7D5C2AD5833900F60FC8 /* XCRemoteSwiftPackageReference "Nuke" */;
+			productName = NukeUI;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = D4A883BD2ACF49DA00154A97 /* Project object */;
 }

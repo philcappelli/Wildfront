@@ -19,8 +19,8 @@ func networkingMiddleware(repository: NationalParksRepository) -> Middleware<App
                     }, receiveValue: {
                         dispatch(
                             .nationalParks(.fetchNationalParksResult(
-                                .success($0.data))
-                            )
+                                .success($0.data)
+                            ))
                         )
                     })
             default:
