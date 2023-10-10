@@ -10,9 +10,9 @@ To run this project locally, follow the steps below:
 ## Prerequisites
 Before you begin, ensure you have met the following requirements:
 
-A Mac computer running macOS.
-Xcode, Apple's integrated development environment.
-A basic understanding of Swift and SwiftUI.
+- A Mac computer running macOS Somona.
+- Xcode 15, Apple's integrated development environment.
+- An iOS 17 compatible device or simulator for running the application.
 
 ## Installation
 Clone this repository to your local machine using your favorite Git client or by running this command in your terminal:
