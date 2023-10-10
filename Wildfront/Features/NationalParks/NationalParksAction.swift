@@ -23,7 +23,6 @@ enum NationalParksAction: Equatable {
 
 extension NationalParksAction {
     /// A computed property that returns an appropriate APIRequest based on the action.
-    ///
     var request: APIRequest {
         switch self {
             /// Request to fetch National Parks data.

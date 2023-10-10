@@ -1,5 +1,5 @@
-import Foundation
 import Combine
+import Foundation
 
 /// Middleware is a typealias for functions that intercept and process actions before they reach the reducer.
 ///

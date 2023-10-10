@@ -35,7 +35,7 @@ struct NationalParksView: View {
                         }
                     }
                     .sheet(item: $selectedPark) { park in
-                        ParkDetailsView(park: park)
+                        NationalParkDetailsView(park: park)
                     }
                 }
             }

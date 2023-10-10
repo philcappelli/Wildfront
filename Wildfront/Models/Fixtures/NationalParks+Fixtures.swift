@@ -1,14 +1,6 @@
-//
-//  NationalParks+Fixtures.swift
-//  Wildfront
-//
-//  Created by Philip on 10/10/23.
-//
-
 import Foundation
 
 extension NationalPark {
-
     /// Returns a single mock NationalPark objects for testing.
     static func fixture() -> NationalPark {
         NationalPark(
@@ -53,8 +45,6 @@ extension NationalPark {
             longitude: "12.3456",
             parkCode: "park3"
         )
-
-        // Add more mock NationalPark objects as needed
 
         return [park1, park2, park3]
     }

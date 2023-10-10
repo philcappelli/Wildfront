@@ -1,10 +1,3 @@
-//
-//  Constants.swift
-//  Wildfront
-//
-//  Created by Philip on 10/10/23.
-//
-
 import Foundation
 
 struct Constants {

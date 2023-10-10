@@ -4,7 +4,6 @@ import XCTest
 
 class APIRequestTests: XCTestCase {
     /// Tests the default api request properties.
-    ///
     func testDefaultAPIRequestProperties() {
         let request = DefaultAPIRequest()
         XCTAssertNotNil(request.baseURL, "DefaultAPIRequest baseURL should not be nil")

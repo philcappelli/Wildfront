@@ -4,7 +4,7 @@ import SwiftUI
 
 /// A view that handles showcasing the details for a NationalPark
 ///
-struct ParkDetailsView: View {
+struct NationalParkDetailsView: View {
     // MARK: - Properties
 
     /// The park that we are showing the details for
@@ -23,9 +23,7 @@ struct ParkDetailsView: View {
                         if let image = state.image {
                             image
                                 .resizable(resizingMode: .stretch)
-                                //.scaledToFill()
                                 .clipped()
-                                //.frame(height: 500)
                         } else if state.error != nil {
                             Color.gray
                         } else {
@@ -40,9 +38,7 @@ struct ParkDetailsView: View {
                         .multilineTextAlignment(.center)
                         .lineLimit(nil)
                         .padding(.horizontal, 20)
-                        .background(.ultraThinMaterial, in:
-                            Rectangle()
-                        )
+                        .background(.ultraThinMaterial, in: Rectangle())
                 }
 
                 Text(park.description)

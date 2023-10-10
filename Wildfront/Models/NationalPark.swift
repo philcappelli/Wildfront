@@ -1,7 +1,5 @@
 import Foundation
 
-import Foundation
-
 /// A struct representing a National Park.
 ///
 struct NationalPark: Codable, Equatable, Identifiable, Hashable {
