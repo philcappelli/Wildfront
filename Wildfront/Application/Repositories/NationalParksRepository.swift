@@ -7,7 +7,7 @@ protocol NationalParksRepository {
     /// Fetches a list of national parks.
     ///
     /// - Returns: A publisher that emits an array of national park names or an error.
-    func fetchNationalParks() -> AnyPublisher<[NationalPark], Error>
+    func fetchNationalParks() -> AnyPublisher<NationalParksResponse, Error>
 }
 
 /// Default implementation of the NationalParksRepository protocol.
@@ -26,7 +26,7 @@ class DefaultNationalParksRepository: NationalParksRepository {
     /// Fetches a list of national parks.
     ///
     /// - Returns: A publisher that emits an array of national park names or an error.
-    func fetchNationalParks() -> AnyPublisher<[NationalPark], Error> {
+    func fetchNationalParks() -> AnyPublisher<NationalParksResponse, Error> {
         apiService.make(NationalParksRequest())
     }
 }

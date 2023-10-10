@@ -44,6 +44,10 @@
 		D4CF7D442AD466D700F60FC8 /* NationalParksView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4CF7D432AD466D700F60FC8 /* NationalParksView.swift */; };
 		D4CF7D462AD4889900F60FC8 /* NationalParksResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4CF7D452AD4889900F60FC8 /* NationalParksResponse.swift */; };
 		D4CF7D482AD4977D00F60FC8 /* Middleware.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4CF7D472AD4977D00F60FC8 /* Middleware.swift */; };
+		D4CF7D4E2AD5043500F60FC8 /* NetworkingMiddleware.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4CF7D4D2AD5043500F60FC8 /* NetworkingMiddleware.swift */; };
+		D4CF7D502AD5047100F60FC8 /* MiddlewareTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4CF7D4F2AD5047100F60FC8 /* MiddlewareTests.swift */; };
+		D4CF7D522AD504C300F60FC8 /* MockNationalParksRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4CF7D512AD504C300F60FC8 /* MockNationalParksRepository.swift */; };
+		D4CF7D542AD50BFC00F60FC8 /* NetworkSessionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4CF7D532AD50BFC00F60FC8 /* NetworkSessionTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -105,6 +109,10 @@
 		D4CF7D432AD466D700F60FC8 /* NationalParksView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NationalParksView.swift; sourceTree = "<group>"; };
 		D4CF7D452AD4889900F60FC8 /* NationalParksResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NationalParksResponse.swift; sourceTree = "<group>"; };
 		D4CF7D472AD4977D00F60FC8 /* Middleware.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Middleware.swift; sourceTree = "<group>"; };
+		D4CF7D4D2AD5043500F60FC8 /* NetworkingMiddleware.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingMiddleware.swift; sourceTree = "<group>"; };
+		D4CF7D4F2AD5047100F60FC8 /* MiddlewareTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MiddlewareTests.swift; sourceTree = "<group>"; };
+		D4CF7D512AD504C300F60FC8 /* MockNationalParksRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockNationalParksRepository.swift; sourceTree = "<group>"; };
+		D4CF7D532AD50BFC00F60FC8 /* NetworkSessionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkSessionTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -214,6 +222,7 @@
 				D4AB41452AD0D4BA004DB20E /* Requests */,
 				D4AB412B2AD06A32004DB20E /* Mocks */,
 				D4A884082ACF9C7700154A97 /* DefaultAPIServiceTests.swift */,
+				D4CF7D532AD50BFC00F60FC8 /* NetworkSessionTests.swift */,
 			);
 			path = Networking;
 			sourceTree = "<group>";
@@ -241,6 +250,7 @@
 				D4AB41232ACFADD7004DB20E /* MockAPIRequest.swift */,
 				D4AB41322AD0773A004DB20E /* MockNetworkSession.swift */,
 				D4AB413A2AD08D51004DB20E /* MockNetworkSessionBehavior.swift */,
+				D4CF7D512AD504C300F60FC8 /* MockNationalParksRepository.swift */,
 			);
 			path = Mocks;
 			sourceTree = "<group>";
@@ -330,7 +340,7 @@
 				D4CF7D292AD3C0E700F60FC8 /* AppReducer.swift */,
 				D4CF7D252AD3C01000F60FC8 /* AppState.swift */,
 				D4CF7D2B2AD3C11000F60FC8 /* Store.swift */,
-				D4CF7D472AD4977D00F60FC8 /* Middleware.swift */,
+				D4CF7D4C2AD5042100F60FC8 /* Middleware */,
 			);
 			path = Store;
 			sourceTree = "<group>";
@@ -359,8 +369,18 @@
 			children = (
 				D4CF7D3F2AD45D9200F60FC8 /* StoreTests.swift */,
 				D4CF7D412AD45EEC00F60FC8 /* ReducerTests.swift */,
+				D4CF7D4F2AD5047100F60FC8 /* MiddlewareTests.swift */,
 			);
 			path = Store;
+			sourceTree = "<group>";
+		};
+		D4CF7D4C2AD5042100F60FC8 /* Middleware */ = {
+			isa = PBXGroup;
+			children = (
+				D4CF7D472AD4977D00F60FC8 /* Middleware.swift */,
+				D4CF7D4D2AD5043500F60FC8 /* NetworkingMiddleware.swift */,
+			);
+			path = Middleware;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -500,6 +520,7 @@
 				D4CF7D3B2AD3C57000F60FC8 /* NationalPark.swift in Sources */,
 				D4CF7D362AD3C35F00F60FC8 /* NationalParksAction.swift in Sources */,
 				D4A883F62ACF614200154A97 /* APIService.swift in Sources */,
+				D4CF7D4E2AD5043500F60FC8 /* NetworkingMiddleware.swift in Sources */,
 				D4AB412A2AD06192004DB20E /* HTTPURLResponse+Extensions.swift in Sources */,
 				D4CF7D462AD4889900F60FC8 /* NationalParksResponse.swift in Sources */,
 				D4CF7D2C2AD3C11000F60FC8 /* Store.swift in Sources */,
@@ -534,9 +555,12 @@
 				D4AB41362AD07E27004DB20E /* MockResponseModel.swift in Sources */,
 				D4AB41492AD0D4E0004DB20E /* NationalParksRequestTests.swift in Sources */,
 				D4CF7D422AD45EEC00F60FC8 /* ReducerTests.swift in Sources */,
+				D4CF7D522AD504C300F60FC8 /* MockNationalParksRepository.swift in Sources */,
 				D4AB41472AD0D4C7004DB20E /* DefaultAPIRequestTests.swift in Sources */,
+				D4CF7D542AD50BFC00F60FC8 /* NetworkSessionTests.swift in Sources */,
 				D4AB41242ACFADD7004DB20E /* MockAPIRequest.swift in Sources */,
 				D4CF7D402AD45D9200F60FC8 /* StoreTests.swift in Sources */,
+				D4CF7D502AD5047100F60FC8 /* MiddlewareTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

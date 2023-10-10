@@ -1,6 +1,9 @@
 import Foundation
 
-func nationalParksReducer(state: inout NationalParksState, action: NationalParksAction) {
+func nationalParksReducer(
+    state: inout NationalParksState,
+    action: NationalParksAction
+) {
     switch action {
         case .fetchNationalParks:
             state.isLoading = true
@@ -8,11 +11,11 @@ func nationalParksReducer(state: inout NationalParksState, action: NationalParks
             state.isLoading = false
             switch result {
                 case .success(let nationalParks):
-                    state.parks = nationalParks.data
+                    state.parks = nationalParks
                     state.error = nil
                 case .failure(let error):
-                    state.parks = []
                     state.error = error
+                    state.parks = []
             }
     }
 }

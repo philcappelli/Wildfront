@@ -8,7 +8,7 @@ enum NationalParksError: Error, Equatable {
 
 enum NationalParksAction: Equatable {
     case fetchNationalParks
-    case fetchNationalParksResult(Result<NationalParksResponse, NationalParksError>)
+    case fetchNationalParksResult(Result<[NationalPark], NationalParksError>)
 }
 
 extension NationalParksAction {

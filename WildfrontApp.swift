@@ -13,7 +13,13 @@ struct WildfrontApp: App {
         initialState: AppState(
             nationalParksState: NationalParksState()
         ),
-        middleware: [ nationalParksMiddleware(service: DefaultAPIService()) ],
+        middleware: [
+            networkingMiddleware(
+                repository: DefaultNationalParksRepository(
+                    apiService: DefaultAPIService()
+                )
+            )
+        ],
         reducer: appReducer(state:action:)
     )
 
