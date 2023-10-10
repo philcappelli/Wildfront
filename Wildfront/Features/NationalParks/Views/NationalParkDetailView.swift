@@ -1,84 +1,74 @@
 import MapKit
+import NukeUI
 import SwiftUI
 
 struct ParkDetailsView: View {
     let park: NationalPark
+    @State private var region: MKCoordinateRegion?
 
     var body: some View {
         ScrollView {
-            VStack(alignment: .leading, spacing: 16) {
-                Text(park.fullName)
-                    .font(.largeTitle)
-
-                Text("Description: \(park.description)")
-                    .font(.headline)
-
-                // Display park images if available
-                if !park.images.isEmpty {
-                    ParkImagesView(images: park.images)
-                }
-
-                Text("Location: \(park.latLong)")
-                    .font(.headline)
-            }
-            .padding()
-        }
-        .navigationBarTitle("Park Details", displayMode: .inline)
-    }
-}
-
-struct ParkImagesView: View {
-    let images: [Image]
-
-    var body: some View {
-        VStack(alignment: .leading, spacing: 8) {
-            Text("Images")
-                .font(.headline)
-
-            ScrollView(.horizontal, showsIndicators: false) {
-                HStack(spacing: 16) {
-                    ForEach(images, id: \.url) { image in
-                        ParkImageView(image: image)
-                            .frame(width: 200, height: 150)
-                            .cornerRadius(10)
+            VStack(spacing: 16) {
+                ZStack(alignment: .bottom) {
+                    LazyImage(url: park.images.randomElement()?.url) { state in
+                        if let image = state.image {
+                            image
+                                .resizable(resizingMode: .stretch)
+                                //.scaledToFill()
+                                .clipped()
+                                //.frame(height: 500)
+                        } else if state.error != nil {
+                            Color.gray
+                        } else {
+                            ProgressView()
+                        }
                     }
+                    .frame(height: 300)
+
+                    Text(park.fullName)
+                        .font(.largeTitle)
+                        .frame(width: UIScreen.main.bounds.width - 20)
+                        .multilineTextAlignment(.center)
+                        .lineLimit(nil)
+                        .padding(.horizontal, 20)
+                        .background(.ultraThinMaterial, in:
+                            Rectangle()
+                        )
                 }
-            }
-        }
-    }
-}
 
-struct ParkImageView: View {
-    let image: Image
+                Text(park.description)
+                    .font(.body)
+                    .frame(width: UIScreen.main.bounds.width - 20)
+                    .multilineTextAlignment(.center)
+                    .lineLimit(nil)
+                    .padding(.horizontal, 20)
 
-    var body: some View {
-        Group {
-            if let imageUrl = image.url {
-                AsyncImage(url: imageUrl) { phase in
-                    switch phase {
-                    case .empty:
-                        // Placeholder or loading view
-                        ProgressView()
-                    case .success(let image):
-                        // Loaded image
-                        image
-                            .resizable()
-                            .aspectRatio(contentMode: .fit)
-                    case .failure:
-                        // Error view
-                        Text("Failed to load image")
-                    @unknown default:
-                        // Handle future cases
-                        EmptyView()
+                if let region = region {
+                    Map(initialPosition: .region(region)) {
+                        Marker(
+                            park.fullName,
+                            coordinate: CLLocationCoordinate2D(
+                                latitude: Double(park.latitude) ?? 0.0,
+                                longitude: Double(park.longitude) ?? 0.0)
+                        )
+                        .tint(.orange)
                     }
+                    .frame(height: 400)
+                    .cornerRadius(10)
+                    .padding(.all, 20)
                 }
-                .font(.subheadline)
-            } else {
-                // If the URL is not valid, display a placeholder or error view
-                Text("Invalid URL")
-                    .font(.subheadline)
             }
+        }.onAppear {
+            region = MKCoordinateRegion(
+                center: CLLocationCoordinate2D(
+                    latitude: Double(park.latitude) ?? 0.0,
+                    longitude: Double(park.longitude) ?? 0.0
+                ),
+                span: MKCoordinateSpan(
+                    latitudeDelta: 3.0,
+                    longitudeDelta: 3.0
+                )
+            )
         }
     }
 }
-

@@ -30,7 +30,6 @@ struct ParkCardView: View {
                 .background(.ultraThinMaterial, in:
                     Rectangle()
                 )
-
         }
         .frame(height: cardHeight)
         .cornerRadius(10)

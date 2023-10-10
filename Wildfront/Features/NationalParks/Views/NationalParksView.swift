@@ -2,17 +2,18 @@ import Observation
 import SwiftUI
 
 struct NationalParksView: View {
+    @State private var searchText = ""
     @State private var selectedPark: NationalPark?
     @State var store: Store<AppState, AppAction>
 
     var body: some View {
-        NavigationView {
+        NavigationStack {
             Group {
                 if store.state.nationalParksState.isLoading {
-                    ProgressView("Loading...")
+                    ProgressView()
                 } else {
                     List {
-                        ForEach(store.state.nationalParksState.parks) { park in
+                        ForEach(searchResults) { park in
                             ParkCardView(park: park)
                                 .onTapGesture {
                                     selectedPark = park
@@ -29,6 +30,17 @@ struct NationalParksView: View {
         }
         .task {
             store.dispatch(.nationalParks(.fetchNationalParks))
+        }
+        .searchable(text: $searchText)
+    }
+
+    var searchResults: [NationalPark] {
+        if searchText.isEmpty {
+            return store.state.nationalParksState.parks
+        } else {
+            return store.state.nationalParksState.parks.filter {
+                $0.fullName.contains(searchText)
+            }
         }
     }
 }
