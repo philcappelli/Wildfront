@@ -219,7 +219,6 @@
 			isa = PBXGroup;
 			children = (
 				D4A883C72ACF49DA00154A97 /* Wildfront */,
-				D4A883C82ACF49DA00154A97 /* WildfrontApp.swift */,
 				D4A883D82ACF49DC00154A97 /* WildfrontTests */,
 				D4A883E22ACF49DC00154A97 /* WildfrontUITests */,
 				D4A883C62ACF49DA00154A97 /* Products */,
@@ -240,6 +239,7 @@
 		D4A883C72ACF49DA00154A97 /* Wildfront */ = {
 			isa = PBXGroup;
 			children = (
+				D4A883C82ACF49DA00154A97 /* WildfrontApp.swift */,
 				D4CF7D182AD19BBE00F60FC8 /* Application */,
 				D4A883F92ACF650100154A97 /* Configuration */,
 				D4AB41282AD0617D004DB20E /* Extensions */,
