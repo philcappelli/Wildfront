@@ -33,6 +33,7 @@ struct NationalParksView: View {
                                     selectedPark = park
                                 }
                         }
+                        .listRowSeparator(.hidden)
                     }
                     .sheet(item: $selectedPark) { park in
                         NationalParkDetailsView(park: park)
@@ -45,6 +46,7 @@ struct NationalParksView: View {
         .task {
             store.dispatch(.nationalParks(.fetchNationalParks))
         }
+        .searchable(text: $searchText)
         .alert(Constants.errorAlertTitle, isPresented: $isAlertPresented) {
             Button(Constants.errorAlertButtonText, role: .cancel) {
                 isAlertPresented = false
@@ -53,7 +55,6 @@ struct NationalParksView: View {
         } message: {
             Text(Constants.errorAlertMessage)
         }
-        .searchable(text: $searchText)
         .onChange(of: store.state.nationalParksState.error) {
             isAlertPresented = store.state.nationalParksState.error != nil
         }
