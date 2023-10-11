@@ -1,4 +1,3 @@
-import Combine
 import Foundation
 
 /// A store that manages the state and actions of the app.
@@ -9,9 +8,6 @@ final class Store<AppState, AppAction> {
 
     /// The current state of the app.
     private(set) var state: AppState
-
-    /// A set of cancellables to manage Combine subscriptions.
-    private var cancellables: Set<AnyCancellable> = []
 
     /// Middleware functions to handle actions before they reach the reducer.
     private var middleware: [Middleware<AppState, AppAction>]
