@@ -1,5 +1,7 @@
 import Foundation
 
+/// A constants file to hold strings until localization is implemented.
+///
 struct Constants {
     // MARK: - Navigation Related
     
